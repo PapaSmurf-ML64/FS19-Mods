@@ -7,7 +7,7 @@
             <fillTypes>barley wheat hops emptypallets carton beer blackbeer lightbeer</fillTypes>
         </specs>
 		<functions>
-			<function>Brewery</function>
+			<function>This brewery produces beer, dark beer, and light beer.</function>
         </functions>
         <image>store_fermentingSilo.dds</image>
         <price>200000</price>
