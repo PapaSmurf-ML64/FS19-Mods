@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="ColzaOil_Factory_ColzaOil_FactoryName" v="Oil Processing Facility"/>
+		<e k="ColzaOil_Factory_ColzaOil_FactoryDescription" v="This factory makes vegetable oil."/>
+		<e k="ColzaOil_Factory_ColzaOil_productLine_ColzaOil" v="Oil Processing Facility"/>
+		<e k="ColzaOil_Factory_ColzaOil_Factory_Input1" v="Canola\Sunflower"/>
+		<e k="ColzaOil_Factory_ColzaOil_Factory_Output_1" v="Vegetable Oil"/>
+
+	</elements>
+</l10n>

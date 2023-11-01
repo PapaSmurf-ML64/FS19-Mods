@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Cookies_Factory_Cookies_FactoryName" v="Bakery"/>
+		<e k="Cookies_Factory_Cookies_FactoryDescription" v="This bakery produces bread, cookies, and donuts."/>
+		<e k="Cookies_Factory_Cookies_productLine_Cookies" v="Bakery"/>
+		<e k="Cookies_Factory_Cookies_Factory_Input1" v="Sugar"/>
+		<e k="Cookies_Factory_Cookies_Factory_Input2" v="Flour"/>
+		<e k="Cookies_Factory_Cookies_Factory_Input3" v="Milk"/>
+		<e k="Cookies_Factory_Cookies_Factory_Input4" v="Eggs"/>
+		<e k="Cookies_Factory_Cookies_Factory_Output_1" v="Cookies"/>
+		<e k="Cookies_Factory_Cookies_Factory_Output_2" v="Bread"/>
+		<e k="Cookies_Factory_Cookies_Factory_Output_3" v="Donut"/>
+
+
+	</elements>
+</l10n>

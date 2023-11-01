@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Brewery</en>
+        <de>Brauerei Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Brewery]]></en>
+        <de><![CDATA[Brauerei Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<l10n>
+		<text name="function_beer">
+			<en>This brewery produces beer.</en>
+			<de>Die Produktion stellt beer.</de>
+		</text>
+		<text name="beer">
+			<en>Beer</en>
+			<de>beer</de>
+		</text>
+		<text name="blackbeer">
+			<en>Dark Beer</en>
+			<de>blackbeer</de>
+		</text>
+		<text name="lightbeer">
+			<en>Light Beer</en>
+			<de>lightbeer</de>
+		</text>
+		<text name="emptypallets">
+			<en>Empty Pallets</en>
+			<de>emptypallets</de>
+		</text>
+		<text name="carton">
+			<en>Cardboard</en>
+			<de>carton</de>
+		</text>
+
+
+	</l10n>
+
+
+    <storeItems>
+        <storeItem xmlFilename="BrauereiFactory.xml" />
+        <storeItem xmlFilename="Paletten/beerpalett.xml" />
+		<storeItem xmlFilename="Paletten/blackbeerpalett.xml" />
+		<storeItem xmlFilename="Paletten/lightbeerpalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+		<sourceFile filename="scripts/register.lua" />
+		<sourceFile filename="scripts1/register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

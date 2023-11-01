@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>Chicken Farm</name>
+        <specs>
+            <capacity>80000</capacity>
+            <fillTypes>barley wheat water emptypallets carton chicken2 egg</fillTypes>
+        </specs>
+		<functions>
+			<function>This farm raises chickens and produces eggs.</function>
+        </functions>
+        <image>store_fermentingSilo.dds</image>
+        <price>250000</price>
+        <lifetime>2000</lifetime>
+        <dailyUpkeep>80</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>GCPLACEABLE</brand>
+        <species>placeable</species>
+        <category>globalCompanyPlaceable</category>
+    </storeData>
+
+    <placeableType>GC_ProductionFactoryPlaceable</placeableType>
+    <filename>HuehnerFactory.i3d</filename>
+    <placement testSizeX="27" testSizeZ="20" sizeX="27" sizeZ="20" useRandomYRotation="false" useManualYRotation="true" />
+
+	<hotspots>
+        <hotspot name="Huehner_Factory" fullName="Chicken Farm" imageName="SELLING_POINT" hidable="true" linkNode="2" category="CATEGORY_TRIGGERS"/>
+    </hotspots>
+
+
+<!--
+===============================================================================================================================
+ -->
+
+    <productionFactories>
+		<productionFactory indexName="HUEHNER" saveId="globalCompany_Huehner">
+			<guiInformation title="Huehner_Factory_Huehner_FactoryName" imageFilename="store_fermentingSilo.dds" description="Huehner_Factory_Huehner_FactoryDescription" cameraFeed="gui_camera"/>
+			<operation updateDelayMinutes="1" showInGlobalGUI="true" />
+
+            <registerUnloadingTriggers>
+				<unloadingTrigger name="UnloadingTriggerGrain" exactFillRootNode="exactFillRootNode1" baleTriggerNode="baleTrigger1" />
+				<unloadingTrigger name="UnloadingTriggerWater" exactFillRootNode="exactFillRootNode2" baleTriggerNode="baleTrigger2" />
+				<unloadingTrigger name="UnloadingTriggerEmpty" exactFillRootNode="exactFillRootNode3" baleTriggerNode="baleTrigger3" />
+				<unloadingTrigger name="UnloadingTriggerCarton" exactFillRootNode="exactFillRootNode4" baleTriggerNode="baleTrigger4" />
+				<unloadingTrigger name="UnloadingTriggerChicken" exactFillRootNode="exactFillRootNode5" baleTriggerNode="baleTrigger5" />
+			</registerUnloadingTriggers>
+
+			<registerInputProducts>
+				<inputProduct name="IP_GRAIN" capacity="16000" title="Huehner_Factory_Huehner_Factory_Input1" >
+					<fillTypes>
+						<fillType name="barley" />
+						<fillType name="wheat" />
+					</fillTypes>
+					<movers>
+						<mover node="plane1">
+							<translation minimum="-8.429 -1.864 -5.275" maximum="-8.429 -0.705 -5.275" />
+						</mover>
+					</movers>
+
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerGrain"/>
+					</inputMethods>
+
+
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display1" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+
+				</inputProduct>
+				<inputProduct name="IP_WATER" capacity="16000" title="Huehner_Factory_Huehner_Factory_Input2" >
+					<fillTypes>
+						<fillType name="water" />
+					</fillTypes>
+
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerWater"/>
+					</inputMethods>
+
+
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display2" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+
+				</inputProduct>
+				<inputProduct name="IP_EMPTY" capacity="16000" title="Huehner_Factory_Huehner_Factory_Input3" >
+					<fillTypes>
+						<fillType name="emptypallets" />
+					</fillTypes>
+
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerEmpty"/>
+					</inputMethods>
+
+					<visibilityNodes>
+						<nodeGroup hasChildCollisions="true" type="VISIBILITY">
+							<child node="fillablePallet2" />
+							<child node="fillablePallet3" />
+						</nodeGroup>
+					</visibilityNodes>
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display3" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+
+				</inputProduct>
+				<inputProduct name="IP_CARTON" capacity="16000" title="Huehner_Factory_Huehner_Factory_Input4" >
+					<fillTypes>
+						<fillType name="carton" />
+					</fillTypes>
+
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerCarton"/>
+					</inputMethods>
+
+					<visibilityNodes>
+						<nodeGroup hasChildCollisions="true" type="VISIBILITY">
+							<child node="fillablePallet4" />
+							<child node="fillablePallet5" />
+						</nodeGroup>
+					</visibilityNodes>
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display4" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+
+				</inputProduct>
+				<inputProduct name="IP_CHICKEN" capacity="16000" title="Huehner_Factory_Huehner_Factory_Input5" >
+					<fillTypes>
+						<fillType name="chicken2" />
+					</fillTypes>
+
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerChicken"/>
+					</inputMethods>
+
+					<visibilityNodes>
+						<nodeGroup hasChildCollisions="true" type="VISIBILITY">
+							<child node="fillablePallet1" />
+						</nodeGroup>
+					</visibilityNodes>
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display5" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+
+				</inputProduct>
+
+			</registerInputProducts>
+
+
+<!-- Output  -->
+
+			<registerOutputProducts>
+      			<outputProduct name="OP_EGG" fillType="egg" capacity="80000" >
+					<outputMethods>
+						<palletCreators fillType="egg" palletCapacity="4000" xmlFilename="Paletten/eggpalett.xml" activateDebugDraw="false" >
+							<palletCreator node="palletSpawnerPlaceNode1" palletInteractionTrigger="interactionTriggerPallet1"/>
+							<palletCreator node="palletSpawnerPlaceNode2" palletInteractionTrigger="interactionTriggerPallet2"/>
+							<palletCreator node="palletSpawnerPlaceNode3" palletInteractionTrigger="interactionTriggerPallet3"/>
+							<palletCreator node="palletSpawnerPlaceNode4" palletInteractionTrigger="interactionTriggerPallet4"/>
+							<palletCreator node="palletSpawnerPlaceNode5" palletInteractionTrigger="interactionTriggerPallet5"/>
+							<palletCreator node="palletSpawnerPlaceNode6" palletInteractionTrigger="interactionTriggerPallet6"/>
+							<palletCreator node="palletSpawnerPlaceNode7" palletInteractionTrigger="interactionTriggerPallet7"/>
+							<palletCreator node="palletSpawnerPlaceNode8" palletInteractionTrigger="interactionTriggerPallet8"/>
+							<palletCreator node="palletSpawnerPlaceNode9" palletInteractionTrigger="interactionTriggerPallet9"/>
+							<palletCreator node="palletSpawnerPlaceNode10" palletInteractionTrigger="interactionTriggerPallet10"/>
+						</palletCreators>
+					</outputMethods>
+
+				    <digitalDisplays>
+						<display displayType="LEVEL" numbers="OP_Display" emptyNumberColor="0 1 0 1" numberColor="1 1 0 1" fullNumberColor="1 0 0 1"/>
+					</digitalDisplays>
+		  	</outputProduct>
+
+			</registerOutputProducts>
+
+
+<!-- productLines  -->
+
+			<productLines>
+				<productLine autoLineStart="true" outputPerHour="1000" title="Huehner_Factory_Huehner_productLine_Huehner" showInGUI="true">
+
+					<inputs>
+						<inputProduct name="IP_GRAIN" percent="30" />
+						<inputProduct name="IP_WATER" percent="10" />
+						<inputProduct name="IP_EMPTY" percent="20" />
+						<inputProduct name="IP_CARTON" percent="20" />
+						<inputProduct name="IP_CHICKEN" percent="0.5" />
+					</inputs>
+
+					<outputs>
+						<outputProduct name="OP_EGG" percent="85" />
+					</outputs>
+
+					<playerTrigger playerTriggerNode="playerTrigger" drawUI="true"/>
+					<operatingParts>
+                        <animationNodeGroups>
+							<animationNodes>
+								<animationNode class="ScrollingAnimation" node="mainBelt01" uvScrollSpeed="-0.13" scrollLength="3.84" shaderParameterName="offsetUV" shaderParameterComponent="2" turnOnFadeTime="0.3" turnOffFadeTime="2.5"/>
+								<animationNode class="ScrollingAnimation" node="mainBelt02" uvScrollSpeed="-0.13" scrollLength="3.84" shaderParameterName="offsetUV" shaderParameterComponent="2" turnOnFadeTime="0.3" turnOffFadeTime="2.5"/>
+								<animationNode class="ScrollingAnimation" node="mainBelt03" uvScrollSpeed="-0.13" scrollLength="3.84" shaderParameterName="offsetUV" shaderParameterComponent="2" turnOnFadeTime="0.3" turnOffFadeTime="2.5"/>
+
+								<animationNode node="fan1" rotAxis="1" rotSpeed="500" />
+								<animationNode node="fan2" rotAxis="1" rotSpeed="500" />
+								<animationNode node="fan3" rotAxis="1" rotSpeed="500" />
+								<animationNode node="fan4" rotAxis="1" rotSpeed="500" />
+							</animationNodes>
+						</animationNodeGroups>
+						<sounds>
+							<sound geSoundNode="audio1"/>
+							<sound geSoundNode="audio2"/>
+							<sound geSoundNode="audio3"/>
+							<sound geSoundNode="audio4"/>
+							<sound geSoundNode="audio5"/>
+							<sound geSoundNode="audio6"/>
+							<sound geSoundNode="audio7"/>
+						</sounds>
+					</operatingParts>
+
+    	 </productLine>
+  	 </productLines>
+
+<!-- i3d id registr  -->
+
+			<i3dMappings>
+				<i3dMapping id="exactFillRootNode1" node="0|0|0|0" />  <!-- IN - unloadingTriggers  -->
+				<i3dMapping id="baleTrigger1" node="0|0|0|1"/>
+				<i3dMapping id="IN_Display1" node="0|0|0|2" />
+				<i3dMapping id="plane1" node="0|0|0|3" />
+				<i3dMapping id="exactFillRootNode2" node="0|0|1|0" />
+				<i3dMapping id="baleTrigger2" node="0|0|1|1"/>
+				<i3dMapping id="IN_Display2" node="0|0|1|2" />
+				<i3dMapping id="exactFillRootNode3" node="0|0|2|0" />
+				<i3dMapping id="baleTrigger3" node="0|0|2|1"/>
+				<i3dMapping id="IN_Display3" node="0|0|2|2" />
+				<i3dMapping id="exactFillRootNode4" node="0|0|3|0" />
+				<i3dMapping id="baleTrigger4" node="0|0|3|1"/>
+				<i3dMapping id="IN_Display4" node="0|0|3|2" />
+				<i3dMapping id="exactFillRootNode5" node="0|0|4|0" />
+				<i3dMapping id="baleTrigger5" node="0|0|4|1"/>
+				<i3dMapping id="IN_Display5" node="0|0|4|2" />
+
+
+				<i3dMapping id="smoke" node="8|1" />
+				<i3dMapping id="playerTrigger" node="3" />  <!-- playerTrigger  -->
+				<i3dMapping id="start1" node="2|0|0" />  <!-- objectSpawner1  -->
+				<i3dMapping id="end1" node="2|0|0|0" />  <!-- objectSpawner1  -->
+				<i3dMapping id="OP_Display" node="1|2" />  <!-- OUT - Display1  -->
+				<i3dMapping id="gui_camera" node="26" />  <!-- gui_camera  -->
+				<i3dMapping id="interactionTriggerPallet1" node="2|0|0|0" />
+				<i3dMapping id="palletSpawnerPlaceNode1" node="2|0|0|1" />
+				<i3dMapping id="interactionTriggerPallet2" node="2|0|1|0" />
+				<i3dMapping id="palletSpawnerPlaceNode2" node="2|0|1|1" />
+				<i3dMapping id="interactionTriggerPallet3" node="2|0|2|0" />
+				<i3dMapping id="palletSpawnerPlaceNode3" node="2|0|2|1" />
+				<i3dMapping id="interactionTriggerPallet4" node="2|0|3|0" />
+				<i3dMapping id="palletSpawnerPlaceNode4" node="2|0|3|1" />
+				<i3dMapping id="interactionTriggerPallet5" node="2|0|4|0" />
+				<i3dMapping id="palletSpawnerPlaceNode5" node="2|0|4|1" />
+				<i3dMapping id="interactionTriggerPallet6" node="2|0|5|0" />
+				<i3dMapping id="palletSpawnerPlaceNode6" node="2|0|5|1" />
+				<i3dMapping id="interactionTriggerPallet7" node="2|0|6|0" />
+				<i3dMapping id="palletSpawnerPlaceNode7" node="2|0|6|1" />
+				<i3dMapping id="interactionTriggerPallet8" node="2|0|7|0" />
+				<i3dMapping id="palletSpawnerPlaceNode8" node="2|0|7|1" />
+				<i3dMapping id="interactionTriggerPallet9" node="2|0|8|0" />
+				<i3dMapping id="palletSpawnerPlaceNode9" node="2|0|8|1" />
+				<i3dMapping id="interactionTriggerPallet10" node="2|0|9|0" />
+				<i3dMapping id="palletSpawnerPlaceNode10" node="2|0|9|1" />
+				<i3dMapping id="fan1" node="17|2|3|0" />
+				<i3dMapping id="fan2" node="17|2|4|0" />
+				<i3dMapping id="fan3" node="17|2|5|0" />
+				<i3dMapping id="fan4" node="17|2|6|0" />
+				<i3dMapping id="mainBelt01" node="17|2|0|0"/>
+				<i3dMapping id="mainBelt02" node="17|2|1|0"/>
+				<i3dMapping id="mainBelt03" node="17|2|2|0"/>
+				<i3dMapping id="fillablePallet1" node="0|0|5|0"/>
+				<i3dMapping id="fillablePallet2" node="0|0|6|0"/>
+				<i3dMapping id="fillablePallet3" node="0|0|6|1"/>
+				<i3dMapping id="fillablePallet4" node="0|0|7|0"/>
+				<i3dMapping id="fillablePallet5" node="0|0|7|1"/>
+				<i3dMapping id="audio1" node="18" />
+				<i3dMapping id="audio2" node="19" />
+				<i3dMapping id="audio3" node="20" />
+				<i3dMapping id="audio4" node="21" />
+				<i3dMapping id="audio5" node="22" />
+				<i3dMapping id="audio6" node="23" />
+				<i3dMapping id="audio7" node="24" />
+			</i3dMappings>
+
+
+		</productionFactory>
+	</productionFactories>
+
+
+
+<!--
+===============================================================================================================================
+ -->
+
+
+    <triggerMarkers>
+        <triggerMarker node="5" />
+    </triggerMarkers>
+
+    <clearAreas>
+        <clearArea startNode="4|0" widthNode="4|0|0" heightNode="4|0|1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="4|0" widthNode="4|0|0" heightNode="4|0|1" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+	<seasons>
+        <maskAreas>
+            <maskArea startNode="4|0" widthNode="4|0|0" heightNode="4|0|1" />
+        </maskAreas>
+    </seasons>
+
+    <tipOcclusionUpdateArea sizeX="25" sizeZ="20" />
+
+
+
+
+</placeable>

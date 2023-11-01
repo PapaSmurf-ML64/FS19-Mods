@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="textures/potatoes_diffuse.dds"/>
+    <File fileId="2" filename="textures/potatoes_normal.dds"/>
+    <File fileId="3" filename="textures/potatoes_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="KartoffelPlane" materialId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="plane.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="Plane" translation="-6.36646 -2.47968 -6.51152" rotation="-180 -90 180" kinematic="true" nodeId="7" materialIds="4" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>

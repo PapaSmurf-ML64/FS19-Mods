@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet">
+    <storeData>
+        <name>Hops</name>
+        <image>Paletten/Pallet.dds</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>99904</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>22512</indexBufferMemoryUsage>
+        <textureMemoryUsage>4194424</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <price>15</price>
+    </storeData>
+    <base>
+        <filename>Paletten/hopspalett.i3d</filename>
+        <size width="2" length="2" lengthOffset="0"/>
+        <canBeReset>false</canBeReset>
+        <input allowed="false"/>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100"/>
+        </components>
+    </base>
+    <animations>
+        <animation name="boxsack">
+			<part node="milkcan1" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="milkcan1" startTime="0.001" endTime="1.000" visibility="true"/>
+			
+		</animation>
+    </animations>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="Hops" capacity="4000">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="boxsack"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="0>" emptySpeed="9000" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <trigger node="dischargeTrigger" />
+        </dischargeNode>
+    </dischargeable>
+    
+    <dynamicMount triggerNode="dynamicMountTrigger"/>
+    
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltShape"/>
+        </meshNodes>
+    </tensionBeltObject>
+    
+    <i3dMappings>
+        <i3dMapping id="dynamicMountTrigger" node="0>0"/>
+        <i3dMapping id="tensionBeltNode" node="0>1"/>
+        <i3dMapping id="milkcan1" node="0>2|0"/>
+       
+        <i3dMapping id="dischargeTrigger" node="0>3"/>
+        <i3dMapping id="boardPallet_vis" node="0>4"/>
+        <i3dMapping id="tensionBeltShape" node="0>4|0"/>
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="$data/maps/textures/european/props/euroPallet01_diffuse.png"/>
+    <File fileId="10" filename="$data/maps/textures/european/props/euroPallet01_normal.png"/>
+    <File fileId="11" filename="$data/maps/textures/european/props/euroPallet01_specular.png"/>
+    <File fileId="8" filename="cuerda.dds"/>
+    <File fileId="7" filename="jamonCrudo.png"/>
+    <File fileId="6" filename="signs/textures/livestockMarketSign_normal.png"/>
+    <File fileId="5" filename="signs/textures/normal.png"/>
+    <File fileId="2" filename="treeSaplingPallet_diffuse.dds"/>
+    <File fileId="3" filename="treeSaplingPallet_normal.dds"/>
+    <File fileId="4" filename="treeSaplingPallet_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="5">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="livestockMarketSign_mat" materialId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="Material #25" materialId="4">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="Material #48" materialId="9">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="ac3dmat1" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="jambonpalett.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet_jambon" dynamic="true" compound="true" collisionMask="25178120" density="0.1" clipDistance="300" nodeId="31" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="dynamicMountTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="3" name="tensionBeltNode" translation="0 0.722266 0" visibility="false" clipDistance="100" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="fillBags" translation="0 0.022 0.00211129" scale="0.9 0.9 0.83" nodeId="34">
+        <Shape shapeId="4" name="box" translation="-0.0108856 -0.048 1.4513e-06" scale="1.1 1 1.2" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true" distanceBlending="false">
+          <Shape shapeId="5" name="livestockMarketSign" translation="-0.00311305 0.568628 0.447886" rotation="-3.98654e-10 0 8.96599e-12" scale="0.175 0.25 0.5" clipDistance="400" nodeId="36" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="livestockMarketSign" translation="-0.00311305 0.568628 -0.450782" rotation="180 0 180" scale="0.175 0.25 0.5" clipDistance="400" nodeId="37" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="livestockMarketSign" translation="0.696341 0.568628 0.00227978" rotation="180 90 180" scale="0.115 0.25 0.5" clipDistance="400" nodeId="38" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="livestockMarketSign" translation="-0.698634 0.568628 0.00227971" rotation="180 -90 -180" scale="0.115 0.25 0.5" clipDistance="400" nodeId="39" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-3.66708 -2.648 -1.27473" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="40" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="41" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-3.13818 -2.648 -1.27473" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="42" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="43" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-2.6405 -2.648 -1.27473" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="44" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="45" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-2.6405 -2.648 -1.00817" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="46" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="47" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-3.20273 -2.648 -1.00817" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="48" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="49" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-3.70111 -2.648 -1.00817" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="50" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="51" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-3.69504 -2.64799 -0.795607" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="52" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="53" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-3.16461 -2.648 -0.75434" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="54" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="55" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-2.64646 -2.648 -0.739806" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="56" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="57" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-2.64646 -2.648 -0.541767" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="58" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="59" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-3.1924 -2.648 -0.541767" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="60" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="61" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="6" name="jamonCrudo2_vis" translation="-3.67347 -2.648 -0.541767" rotation="-180 90 -179.981" scale="1 1.1 1" nodeId="62" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="7" name="Torus001_vis" translation="2.19 0 2.20437" clipDistance="15" nodeId="63" materialIds="4"/>
+        </Shape>
+        <Shape shapeId="4" name="box" translation="-0.0108856 0.508605 1.4513e-06" scale="1.1 1 1.2" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true" distanceBlending="false">
+          <Shape shapeId="5" name="livestockMarketSign" translation="-0.00311305 0.568628 0.447886" rotation="-3.98654e-10 0 8.96599e-12" scale="0.175 0.25 0.5" clipDistance="400" nodeId="65" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="livestockMarketSign" translation="-0.00311305 0.568628 -0.450782" rotation="180 0 180" scale="0.175 0.25 0.5" clipDistance="400" nodeId="66" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="livestockMarketSign" translation="0.696341 0.568628 0.00227978" rotation="180 90 180" scale="0.115 0.25 0.5" clipDistance="400" nodeId="67" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="livestockMarketSign" translation="-0.698634 0.568628 0.00227971" rotation="180 -90 -180" scale="0.115 0.25 0.5" clipDistance="400" nodeId="68" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="8" name="dischargeTrigger" translation="1.42109e-16 0.759947 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="69" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="9" name="apfelPalletVis" clipDistance="300" nodeId="70" materialIds="5" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="10" name="tensionBeltShape" visibility="false" clipDistance="10" nodeId="71" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <TransformGroup name="collisions" translation="0 0.0173614 0" nodeId="72">
+        <Shape shapeId="11" name="solidColi" translation="0 0.175 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="73" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="12" name="colPart01" translation="0.00271691 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="74" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="13" name="colPart02" translation="0.622586 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="75" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="14" name="colPart03" translation="-0.622301 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="76" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="15" name="colPart04" translation="0.00271691 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="77" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="16" name="colPart05" translation="0.00271691 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="78" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="17" name="colPart06" translation="0.622586 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="79" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="18" name="colPart07" translation="0.622586 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="80" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="19" name="colPart08" translation="-0.622301 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="81" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="20" name="colPart09" translation="-0.622301 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="82" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="31">
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="jambon"/>
+      <Attribute name="meshNodes" type="string" value="0 0|6"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

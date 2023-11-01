@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="textures/groundDecalwater.dds"/>
+        <File fileId="2" filename="textures/groundDecalwaterE.dds"/>
+    </Files>
+    <Materials>
+        <Material name="UnnamedMaterial" materialId="37">
+            <Texture fileId="1"/>
+        </Material>
+        <Material name="UnnamedMaterial" materialId="39">
+            <Texture fileId="2"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="adstipp.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="plane" translation="-16.7274 1.45276 -23.827" rotation="-180 -90 -90" scale="1.07535 1.15572 0.81535" nodeId="657" materialIds="37" distanceBlending="false"/>
+        <Shape shapeId="1" name="plane" translation="-14.3181 1.45909 -19.899" rotation="180 -90 -90" scale="0.892781 0.770552 0.723704" nodeId="658" materialIds="39" distanceBlending="false"/>
+    </Scene>
+</i3D>

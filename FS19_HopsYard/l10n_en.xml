@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="HopsYard_Hops_FactoryName" v="Hops Plantation"/>
+		<e k="HopsYard_Hops_FactoryDescription" v="This plantation produces hops, to get this you need water and manure."/>
+		<e k="HopsYard_Hops_productLine_Hops" v="Hops Plantation"/>
+		<e k="HopsYard_Hops_Factory_Input1" v="Manure"/>
+		<e k="HopsYard_Hops_Factory_Input2" v="Water"/>
+		<e k="HopsYard_Hops_Factory_Output_1" v="Hops"/>
+
+	</elements>
+</l10n>

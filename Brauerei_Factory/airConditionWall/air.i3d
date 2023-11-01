@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="7" filename="Games/Farming Simulator 19/data/maps/textures/american/props/airConditionUSA_alpha_diffuse.png"/>
+        <File fileId="8" filename="Games/Farming Simulator 19/data/maps/textures/american/props/airConditionUSA_alpha_normal.png"/>
+        <File fileId="9" filename="Games/Farming Simulator 19/data/maps/textures/american/props/airConditionUSA_alpha_specular.png"/>
+        <File fileId="1" filename="Games/Farming Simulator 19/data/maps/textures/american/props/airConditionUSA_b_diffuse.png"/>
+        <File fileId="2" filename="Games/Farming Simulator 19/data/maps/textures/american/props/airConditionUSA_b_normal.png"/>
+        <File fileId="3" filename="Games/Farming Simulator 19/data/maps/textures/american/props/airConditionUSA_b_specular.png"/>
+        <File fileId="11" filename="Games/Farming Simulator 19/data/maps/textures/american/props/propsDecals_US_diffuse.png"/>
+        <File fileId="10" filename="Games/Farming Simulator 19/data/shaders/decalShader.xml"/>
+        <File fileId="6" filename="shaders/meshRotateShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="airConditionUSA_b_mat" materialId="30">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+        </Material>
+        <Material name="lambert1" materialId="22" diffuseColor="0.494118 0.494118 0.494118 1"/>
+        <Material name="propsDecals_US_mat" materialId="19" specularColor="0.494118 1 0.494118" customShaderId="10">
+            <Texture fileId="11"/>
+        </Material>
+        <Material name="airConditionUSA_alpha_mat" materialId="17" customShaderId="10">
+            <Texture fileId="7"/>
+            <Normalmap fileId="8"/>
+            <Glossmap fileId="9"/>
+        </Material>
+        <Material name="UnnamedMaterial" materialId="8" diffuseColor="0.411765 0.411765 0.411765 1" specularColor="0.427451 1 0.4" customShaderId="6" customShaderVariation="LIGHT">
+            <CustomParameter name="rotationSpeed" value="0 0 1 5"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="air.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="airConditionWall" translation="-0.944663 -3.07186 13.5847" clipDistance="120" nodeId="329" materialIds="30" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="rotor" translation="0 0 0.203397" clipDistance="120" nodeId="330" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="alpha" translation="0 0 0.203397" clipDistance="50" nodeId="331" materialIds="17" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="decals" translation="0 0 0.203397" clipDistance="50" nodeId="332" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="5" name="col" translation="0.172867 -0.0164132 0.128737" visibility="false" static="true" nodeId="333" materialIds="22" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+    </Scene>
+</i3D>

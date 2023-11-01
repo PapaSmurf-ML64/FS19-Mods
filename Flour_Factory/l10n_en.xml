@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Flour_Factory_Flour_FactoryName" v="Flour Mill"/>
+		<e k="Flour_Factory_Flour_FactoryDescription" v="This factory produces flour."/>
+		<e k="Flour_Factory_Flour_productLine_Flour" v="Flour Mill"/>
+		<e k="Flour_Factory_Flour_Factory_Input1" v="Wheat/Barley"/>
+		<e k="Flour_Factory_Flour_Factory_Output_1" v="Flour"/>
+
+	</elements>
+</l10n>

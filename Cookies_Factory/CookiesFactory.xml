@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>Bakery</name>
+        <specs>
+            <capacity>800000</capacity>
+            <fillTypes>sugar flour egg cookies bread donuts</fillTypes>
+        </specs>
+		<functions>
+			<function>This factory produces bread, cookies, and donuts.</function>
+        </functions>
+        <image>store_fermentingSilo.dds</image>
+        <price>255000</price>
+        <lifetime>2000</lifetime>
+        <dailyUpkeep>30</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>GCPLACEABLE</brand>
+        <species>placeable</species>
+        <category>globalCompanyPlaceable</category>
+    </storeData>
+
+    <placeableType>GC_ProductionFactoryPlaceable</placeableType>
+    <filename>CookiesFactory.i3d</filename>
+    <placement testSizeX="27" testSizeZ="20" sizeX="27" sizeZ="20" useRandomYRotation="false" useManualYRotation="true" />
+
+	<hotspots>
+        <hotspot name="Cookies_Factory" fullName="Bakery" imageName="SELLING_POINT" hidable="true" linkNode="3" category="CATEGORY_TRIGGERS"/>
+    </hotspots>
+
+
+<!--
+===============================================================================================================================
+ -->
+
+    <productionFactories>
+		<productionFactory indexName="COOKIES" saveId="globalCompany_Cookies">
+			<guiInformation title="Cookies_Factory_Cookies_FactoryName" imageFilename="store_fermentingSilo.dds" description="Cookies_Factory_Cookies_FactoryDescription" cameraFeed="gui_camera"/>
+			<operation updateDelayMinutes="1" showInGlobalGUI="true" />
+
+            <registerUnloadingTriggers>
+				<unloadingTrigger name="UnloadingTriggerGrain" exactFillRootNode="exactFillRootNode1" baleTriggerNode="baleTrigger1" />
+				<unloadingTrigger name="UnloadingTriggerLiquid" exactFillRootNode="exactFillRootNode2" palletTriggerNode="baleTrigger2" />
+				<unloadingTrigger name="UnloadingTriggerWater" exactFillRootNode="exactFillRootNode3"  />
+				<unloadingTrigger name="UnloadingTriggerEgg" exactFillRootNode="exactFillRootNode4" baleTriggerNode="baleTrigger4" />
+			</registerUnloadingTriggers>
+
+			<registerInputProducts>
+				<inputProduct name="IP_GRAIN" capacity="16000" title="Cookies_Factory_Cookies_Factory_Input1" >
+					<fillTypes>
+						<fillType name="sugar" />
+					</fillTypes>
+
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerGrain"/>
+					</inputMethods>
+					<visibilityNodes>
+						<nodeGroup hasChildCollisions="true" type="VISIBILITY">
+							<child node="fillablePallet1" />
+							<child node="fillablePallet2" />
+							<child node="fillablePallet3" />
+							<child node="fillablePallet4" />
+							<child node="fillablePallet5" />
+						</nodeGroup>
+					</visibilityNodes>
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display1" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+
+				</inputProduct>
+				 <inputProduct name="IP_LIQUID" capacity="60000" title="Cookies_Factory_Cookies_Factory_Input2">
+					<fillTypes>
+						<fillType name="flour" />
+					</fillTypes>
+
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerLiquid"/>
+					</inputMethods>
+					<visibilityNodes>
+						<nodeGroup hasChildCollisions="true" type="VISIBILITY">
+							<child node="fillablePallet6" />
+							<child node="fillablePallet7" />
+							<child node="fillablePallet8" />
+							<child node="fillablePallet9" />
+							<child node="fillablePallet10" />
+						</nodeGroup>
+					</visibilityNodes>
+
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display2" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+				</inputProduct>
+				<inputProduct name="IP_WATER" capacity="16000" title="Cookies_Factory_Cookies_Factory_Input3">
+					<fillTypes>
+						<fillType name="milk" />
+					</fillTypes>
+					<purchase fixedPricePerLitre="0.32" />
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerWater"/>
+					</inputMethods>
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display3" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+				</inputProduct>
+				<inputProduct name="IP_EGG" capacity="6000" title="Cookies_Factory_Cookies_Factory_Input4" >
+					<fillTypes>
+						<fillType name="egg" />
+					</fillTypes>
+
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerEgg"/>
+					</inputMethods>
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display4" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+
+				</inputProduct>
+			</registerInputProducts>
+
+
+<!-- Output  -->
+
+			<registerOutputProducts>
+      			<outputProduct name="OP_COOKIES" fillType="cookies" capacity="40000" >
+					<outputMethods>
+						<palletCreators fillType="cookies" palletCapacity="4000" xmlFilename="Paletten/cookiespalett.xml" activateDebugDraw="false" >
+							<palletCreator node="palletSpawnerPlaceNode_9"  palletInteractionTrigger="interactionTriggerPallet_9"/>
+							<palletCreator node="palletSpawnerPlaceNode10" palletInteractionTrigger="interactionTriggerPallet10"/>
+							<palletCreator node="palletSpawnerPlaceNode11" palletInteractionTrigger="interactionTriggerPallet11"/>
+							<palletCreator node="palletSpawnerPlaceNode12" palletInteractionTrigger="interactionTriggerPallet12"/>
+							<palletCreator node="palletSpawnerPlaceNode13" palletInteractionTrigger="interactionTriggerPallet13"/>
+							<palletCreator node="palletSpawnerPlaceNode14" palletInteractionTrigger="interactionTriggerPallet14"/>
+							<palletCreator node="palletSpawnerPlaceNode15" palletInteractionTrigger="interactionTriggerPallet15"/>
+							<palletCreator node="palletSpawnerPlaceNode16" palletInteractionTrigger="interactionTriggerPallet16"/>
+							<palletCreator node="palletSpawnerPlaceNode17" palletInteractionTrigger="interactionTriggerPallet17"/>
+							<palletCreator node="palletSpawnerPlaceNode18" palletInteractionTrigger="interactionTriggerPallet18"/>
+						</palletCreators>
+					</outputMethods>
+
+				    <digitalDisplays>
+						<display displayType="LEVEL" numbers="OP_Display" emptyNumberColor="0 1 0 1" numberColor="1 1 0 1" fullNumberColor="1 0 0 1"/>
+					</digitalDisplays>
+			</outputProduct>
+			<outputProduct name="OP_BREAD" fillType="bread" capacity="40000" >
+					<outputMethods>
+						<palletCreators fillType="bread" palletCapacity="4000" xmlFilename="Paletten/breadpalett.xml" activateDebugDraw="false" >
+							<palletCreator node="palletSpawnerPlaceNode1"  palletInteractionTrigger="interactionTriggerPallet1"/>
+							<palletCreator node="palletSpawnerPlaceNode2"  palletInteractionTrigger="interactionTriggerPallet2"/>
+							<palletCreator node="palletSpawnerPlaceNode3"  palletInteractionTrigger="interactionTriggerPallet3"/>
+							<palletCreator node="palletSpawnerPlaceNode4"  palletInteractionTrigger="interactionTriggerPallet4"/>
+							<palletCreator node="palletSpawnerPlaceNode5"  palletInteractionTrigger="interactionTriggerPallet5"/>
+							<palletCreator node="palletSpawnerPlaceNode6"  palletInteractionTrigger="interactionTriggerPallet6"/>
+							<palletCreator node="palletSpawnerPlaceNode7"  palletInteractionTrigger="interactionTriggerPallet7"/>
+							<palletCreator node="palletSpawnerPlaceNode8"  palletInteractionTrigger="interactionTriggerPallet8"/>
+							<palletCreator node="palletSpawnerPlaceNode09"  palletInteractionTrigger="interactionTriggerPallet09"/>
+							<palletCreator node="palletSpawnerPlaceNode_10" palletInteractionTrigger="interactionTriggerPallet_10"/>
+						</palletCreators>
+					</outputMethods>
+
+				    <digitalDisplays>
+						<display displayType="LEVEL" numbers="OP_Display1" emptyNumberColor="0 1 0 1" numberColor="1 1 0 1" fullNumberColor="1 0 0 1"/>
+					</digitalDisplays>
+			</outputProduct>
+			<outputProduct name="OP_DONUTS" fillType="donuts" capacity="40000" >
+					<outputMethods>
+						<palletCreators fillType="donuts" palletCapacity="4000" xmlFilename="Paletten/donutspalett.xml" activateDebugDraw="false" >
+							<palletCreator node="palletSpawnerPlaceNode20"  palletInteractionTrigger="interactionTriggerPallet20"/>
+							<palletCreator node="palletSpawnerPlaceNode21"  palletInteractionTrigger="interactionTriggerPallet21"/>
+							<palletCreator node="palletSpawnerPlaceNode22"  palletInteractionTrigger="interactionTriggerPallet22"/>
+							<palletCreator node="palletSpawnerPlaceNode23"  palletInteractionTrigger="interactionTriggerPallet23"/>
+							<palletCreator node="palletSpawnerPlaceNode24"  palletInteractionTrigger="interactionTriggerPallet24"/>
+							<palletCreator node="palletSpawnerPlaceNode25"  palletInteractionTrigger="interactionTriggerPallet25"/>
+							<palletCreator node="palletSpawnerPlaceNode26"  palletInteractionTrigger="interactionTriggerPallet26"/>
+							<palletCreator node="palletSpawnerPlaceNode27"  palletInteractionTrigger="interactionTriggerPallet27"/>
+							<palletCreator node="palletSpawnerPlaceNode28"  palletInteractionTrigger="interactionTriggerPallet28"/>
+							<palletCreator node="palletSpawnerPlaceNode29"  palletInteractionTrigger="interactionTriggerPallet29"/>
+						</palletCreators>
+					</outputMethods>
+
+				    <digitalDisplays>
+						<display displayType="LEVEL" numbers="OP_Display2" emptyNumberColor="0 1 0 1" numberColor="1 1 0 1" fullNumberColor="1 0 0 1"/>
+					</digitalDisplays>
+			</outputProduct>
+
+			</registerOutputProducts>
+
+
+<!-- productLines  -->
+
+			<productLines>
+				<productLine autoLineStart="true" outputPerHour="1000" title="Cookies_Factory_Cookies_productLine_Cookies" showInGUI="true">
+
+					<inputs>
+						<inputProduct name="IP_GRAIN" percent="40" />
+						<inputProduct name="IP_LIQUID" percent="30" />
+						<inputProduct name="IP_WATER" percent="30" />
+						<inputProduct name="IP_EGG" percent="3" />
+					</inputs>
+
+					<outputs>
+						<outputProduct name="OP_COOKIES" percent="75" />
+						<outputProduct name="OP_BREAD" percent="75" />
+						<outputProduct name="OP_DONUTS" percent="75" />
+					</outputs>
+
+					<playerTrigger playerTriggerNode="playerTrigger" drawUI="true"/>
+
+    	 </productLine>
+  	 </productLines>
+
+<!-- i3d id registr  -->
+
+			<i3dMappings>
+				<i3dMapping id="exactFillRootNode1" node="1|0|0|0" />  <!-- IN - unloadingTriggers  -->
+				<i3dMapping id="exactFillRootNode2" node="1|0|1|0" />
+				<i3dMapping id="exactFillRootNode3" node="1|0|2|0" />
+				<i3dMapping id="exactFillRootNode4" node="1|0|3|0" />
+				<i3dMapping id="baleTrigger1" node="1|0|0|1"/>
+				<i3dMapping id="baleTrigger2" node="1|0|1|1"/>
+				<i3dMapping id="baleTrigger4" node="1|0|3|1"/>
+				<i3dMapping id="IN_Display1" node="1|0|0|2" />
+				<i3dMapping id="IN_Display2" node="1|0|1|2" />
+				<i3dMapping id="IN_Display3" node="1|0|2|1" />
+				<i3dMapping id="IN_Display4" node="1|0|3|2" />
+				<i3dMapping id="smoke" node="8|1" />
+				<i3dMapping id="playerTrigger" node="3" />  <!-- playerTrigger  -->
+				<i3dMapping id="start1" node="2|0|0" />  <!-- objectSpawner1  -->
+				<i3dMapping id="end1" node="2|0|0|0" />  <!-- objectSpawner1  -->
+				<i3dMapping id="OP_Display" node="2|0|0" />
+				<i3dMapping id="OP_Display1" node="2|1|0" />
+				<i3dMapping id="OP_Display2" node="2|2|1" />
+
+				<i3dMapping id="gui_camera" node="5" />  <!-- gui_camera  -->
+				<!--Cookies out-->
+				<i3dMapping id="interactionTriggerPallet_9" node="2|0|1|0" />
+				<i3dMapping id="palletSpawnerPlaceNode_9" node="2|0|1|1" />
+				<i3dMapping id="interactionTriggerPallet10" node="2|0|2|0" />
+				<i3dMapping id="palletSpawnerPlaceNode10" node="2|0|2|1" />
+				<i3dMapping id="interactionTriggerPallet11" node="2|0|3|0" />
+				<i3dMapping id="palletSpawnerPlaceNode11" node="2|0|3|1" />
+				<i3dMapping id="interactionTriggerPallet12" node="2|0|4|0" />
+				<i3dMapping id="palletSpawnerPlaceNode12" node="2|0|4|1" />
+				<i3dMapping id="interactionTriggerPallet13" node="2|0|5|0" />
+				<i3dMapping id="palletSpawnerPlaceNode13" node="2|0|5|1" />
+				<i3dMapping id="interactionTriggerPallet14" node="2|0|6|0" />
+				<i3dMapping id="palletSpawnerPlaceNode14" node="2|0|6|1" />
+				<i3dMapping id="interactionTriggerPallet15" node="2|0|7|0" />
+				<i3dMapping id="palletSpawnerPlaceNode15" node="2|0|7|1" />
+				<i3dMapping id="interactionTriggerPallet16" node="2|0|8|0" />
+				<i3dMapping id="palletSpawnerPlaceNode16" node="2|0|8|1" />
+				<i3dMapping id="interactionTriggerPallet17" node="2|0|9|0" />
+				<i3dMapping id="palletSpawnerPlaceNode17" node="2|0|9|1" />
+				<i3dMapping id="interactionTriggerPallet18" node="2|0|10|0" />
+				<i3dMapping id="palletSpawnerPlaceNode18" node="2|0|10|1" />
+				<!--Bread out-->
+				<i3dMapping id="interactionTriggerPallet1" node="2|1|1|0|0" />
+				<i3dMapping id="palletSpawnerPlaceNode1" node="2|1|1|0|1" />
+				<i3dMapping id="interactionTriggerPallet2" node="2|1|1|1|0" />
+				<i3dMapping id="palletSpawnerPlaceNode2" node="2|1|1|1|1" />
+				<i3dMapping id="interactionTriggerPallet3" node="2|1|1|2|0" />
+				<i3dMapping id="palletSpawnerPlaceNode3" node="2|1|1|2|1" />
+				<i3dMapping id="interactionTriggerPallet4" node="2|1|1|3|0" />
+				<i3dMapping id="palletSpawnerPlaceNode4" node="2|1|1|3|1" />
+				<i3dMapping id="interactionTriggerPallet5" node="2|1|1|4|0" />
+				<i3dMapping id="palletSpawnerPlaceNode5" node="2|1|1|4|1" />
+				<i3dMapping id="interactionTriggerPallet6" node="2|1|1|5|0" />
+				<i3dMapping id="palletSpawnerPlaceNode6" node="2|1|1|5|1" />
+				<i3dMapping id="interactionTriggerPallet7" node="2|1|1|6|0" />
+				<i3dMapping id="palletSpawnerPlaceNode7" node="2|1|1|6|1" />
+				<i3dMapping id="interactionTriggerPallet8" node="2|1|1|7|0" />
+				<i3dMapping id="palletSpawnerPlaceNode8" node="2|1|1|7|1" />
+				<i3dMapping id="interactionTriggerPallet09" node="2|1|1|8|0" />
+				<i3dMapping id="palletSpawnerPlaceNode09" node="2|1|1|8|1" />
+				<i3dMapping id="interactionTriggerPallet_10" node="2|1|1|9|0" />
+				<i3dMapping id="palletSpawnerPlaceNode_10" node="2|1|1|9|1" />
+				<!--Donuts out-->
+				<i3dMapping id="interactionTriggerPallet20" node="2|2|0|0|0" />
+				<i3dMapping id="palletSpawnerPlaceNode20" node="2|2|0|0|1" />
+				<i3dMapping id="interactionTriggerPallet21" node="2|2|0|1|0" />
+				<i3dMapping id="palletSpawnerPlaceNode21" node="2|2|0|1|1" />
+				<i3dMapping id="interactionTriggerPallet22" node="2|2|0|2|0" />
+				<i3dMapping id="palletSpawnerPlaceNode22" node="2|2|0|2|1" />
+				<i3dMapping id="interactionTriggerPallet23" node="2|2|0|3|0" />
+				<i3dMapping id="palletSpawnerPlaceNode23" node="2|2|0|3|1" />
+				<i3dMapping id="interactionTriggerPallet24" node="2|2|0|4|0" />
+				<i3dMapping id="palletSpawnerPlaceNode24" node="2|2|0|4|1" />
+				<i3dMapping id="interactionTriggerPallet25" node="2|2|0|5|0" />
+				<i3dMapping id="palletSpawnerPlaceNode25" node="2|2|0|5|1" />
+				<i3dMapping id="interactionTriggerPallet26" node="2|2|0|6|0" />
+				<i3dMapping id="palletSpawnerPlaceNode26" node="2|2|0|6|1" />
+				<i3dMapping id="interactionTriggerPallet27" node="2|2|0|7|0" />
+				<i3dMapping id="palletSpawnerPlaceNode27" node="2|2|0|7|1" />
+				<i3dMapping id="interactionTriggerPallet28" node="2|2|0|8|0" />
+				<i3dMapping id="palletSpawnerPlaceNode28" node="2|2|0|8|1" />
+				<i3dMapping id="interactionTriggerPallet29" node="2|2|0|9|0" />
+				<i3dMapping id="palletSpawnerPlaceNode29" node="2|2|0|9|1" />
+
+				<i3dMapping id="fillablePallet1" node="1|0|4|0"/>
+				<i3dMapping id="fillablePallet2" node="1|0|4|1"/>
+				<i3dMapping id="fillablePallet3" node="1|0|4|2"/>
+				<i3dMapping id="fillablePallet4" node="1|0|4|3"/>
+				<i3dMapping id="fillablePallet5" node="1|0|4|4"/>
+				<i3dMapping id="fillablePallet6" node="1|0|5|0"/>
+				<i3dMapping id="fillablePallet7" node="1|0|5|1"/>
+				<i3dMapping id="fillablePallet8" node="1|0|5|2"/>
+				<i3dMapping id="fillablePallet9" node="1|0|5|3"/>
+				<i3dMapping id="fillablePallet10" node="1|0|5|4"/>
+			</i3dMappings>
+
+
+		</productionFactory>
+	</productionFactories>
+
+
+
+<!--
+===============================================================================================================================
+ -->
+
+
+    <triggerMarkers>
+        <triggerMarker node="5" />
+    </triggerMarkers>
+
+    <clearAreas>
+        <clearArea startNode="4|0" widthNode="4|0|0" heightNode="4|0|1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="4|0" widthNode="4|0|0" heightNode="4|0|1" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+	<seasons>
+        <maskAreas>
+            <maskArea startNode="4|0" widthNode="4|0|0" heightNode="4|0|1" />
+        </maskAreas>
+    </seasons>
+
+    <tipOcclusionUpdateArea sizeX="25" sizeZ="20" />
+
+
+
+
+</placeable>

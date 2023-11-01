@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/objects/pallets/woolPallet/woolPallet_diffuse.png"/>
+    <File fileId="5" filename="$data/objects/pallets/woolPallet/woolPallet_normal.png"/>
+    <File fileId="6" filename="$data/objects/pallets/woolPallet/woolPallet_specular.png"/>
+    <File fileId="2" filename="textures/Karton1.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="woolPallet_mat" materialId="4">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="Karton" materialId="6" specularColor="0.329412 1 0.329412">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="donutspalett.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet_donuts" dynamic="true" compound="true" collisionMask="25178120" density="0.1" clipDistance="300" nodeId="25" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="dynamicMountTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="3" name="tensionBeltNode" translation="0 0.722266 0" visibility="false" clipDistance="100" nodeId="27" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="fillBags" translation="0 -0.00342231 0" scale="1 1.2 1" nodeId="28">
+        <Shape shapeId="4" name="karton01" translation="-6.08421 -1.211 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.59628 -1.211 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.12396 -1.211 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.12396 -1.211 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.60731 -1.211 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-6.08923 -1.211 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-6.08923 -0.849 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.60731 -0.849 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.12396 -0.849 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="37" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.12396 -0.849 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.59628 -0.849 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-6.08421 -0.849 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-6.08421 -0.52 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.59628 -0.52 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.12396 -0.52 0.0293101" rotation="180 90 180" scale="1.28 1 0.91" nodeId="43" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.12396 -0.52 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="44" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-5.60731 -0.52 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="45" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="karton01" translation="-6.08923 -0.52 -0.432795" rotation="180 90 180" scale="1.28 1 0.91" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="5" name="dischargeTrigger" translation="1.42109e-16 0.759947 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="6" name="woolPallet_vis" clipDistance="300" nodeId="48" materialIds="4" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="7" name="tensionBeltShape" translation="0 0.5 0" visibility="false" clipDistance="10" nodeId="49" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <TransformGroup name="collisions" nodeId="50">
+        <Shape shapeId="8" name="solidColi" translation="0 0.175 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="9" name="colPart01" translation="0.00271691 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="10" name="colPart02" translation="0.622586 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="53" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="11" name="colPart03" translation="-0.622301 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="54" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="12" name="colPart04" translation="0.00271691 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="55" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="13" name="colPart05" translation="0.00271691 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="56" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="14" name="colPart06" translation="0.622586 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="57" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="15" name="colPart07" translation="0.622586 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="58" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="16" name="colPart08" translation="-0.622301 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="59" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="17" name="colPart09" translation="-0.622301 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="60" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="25">
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="donuts"/>
+      <Attribute name="meshNodes" type="string" value="0 0|6"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

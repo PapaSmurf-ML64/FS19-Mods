@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="Games/Farming Simulator 19/data/objects/pallets/pallet_diffuse.png"/>
+        <File fileId="2" filename="Games/Farming Simulator 19/data/objects/pallets/pallet_normal.png"/>
+        <File fileId="3" filename="Games/Farming Simulator 19/data/objects/pallets/pallet_specular.png"/>
+        <File fileId="5" filename="texture/hops.dds"/>
+    </Files>
+    <Materials>
+        <Material name="adStrip" materialId="5" specularColor="0.164706 1 0.164706" alphaBlending="true">
+            <Texture fileId="5"/>
+        </Material>
+        <Material name="Default" materialId="4" diffuseColor="1 1 1 1"/>
+        <Material name="pallet_mat" materialId="7">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="hops.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="fillablePallet_vis" clipDistance="300" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="fillBags" translation="0 0.0220372 0.00211129" scale="0.9 0.9 0.83" nodeId="29">
+                <TransformGroup name="Hops" translation="-0.00244254 0.973905 -0.0448871" scale="1.11111 1.11111 1.20482" nodeId="30">
+                    <Shape shapeId="2" name="adStrip" translation="-0.341183 0 0.246331" rotation="90 -0 180" scale="1.33048 2.181 1.08138" clipDistance="600" nodeId="31" materialIds="4,5" receiveShadows="true"/>
+                    <Shape shapeId="2" name="adStrip" translation="0.342567 0 0.246331" rotation="90 -0 180" scale="1.33903 2.18887 1.08992" clipDistance="600" nodeId="32" materialIds="4,5" receiveShadows="true"/>
+                    <Shape shapeId="2" name="adStrip" translation="0.342567 0 -0.248572" rotation="90 -0 180" scale="1.33903 1.64325 1.08992" clipDistance="600" nodeId="33" materialIds="4,5" receiveShadows="true"/>
+                    <Shape shapeId="2" name="adStrip" translation="-0.343952 0 -0.24409" rotation="90 -0 180" scale="1.33903 1.64666 1.08992" clipDistance="600" nodeId="34" materialIds="4,5" receiveShadows="true"/>
+                </TransformGroup>
+            </TransformGroup>
+        </Shape>
+    </Scene>
+</i3D>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="textures/kuhlturm.dds"/>
+    </Files>
+    <Materials>
+        <Material name="kuhlturm1" materialId="57" specularColor="0.0941177 1 0.0941177">
+            <Texture fileId="1"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="tubosmoke.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="rohr" translation="-10.2939 15 38.1745" rotation="-90 0 -180" scale="0.3 0.3 0.2" clipDistance="600" nodeId="607" materialIds="57" castsShadows="true" receiveShadows="true"/>
+    </Scene>
+</i3D>

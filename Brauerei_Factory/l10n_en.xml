@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Brauerei_Factory_Brauerei_FactoryName" v="Brewery"/>
+		<e k="Brauerei_Factory_Brauerei_FactoryDescription" v="This brewery produces beer."/>
+		<e k="Brauerei_Factory_Brauerei_productLine_Brauerei" v="Brewery"/>
+		<e k="Brauerei_Factory_Brauerei_Factory_Input1" v="Barley/Wheat"/>
+		<e k="Brauerei_Factory_Brauerei_Factory_Input2" v="Hops"/>
+		<e k="Brauerei_Factory_Brauerei_Factory_Input3" v="Water"/>
+		<e k="Brauerei_Factory_Brauerei_Factory_Input4" v="Pallets"/>
+		<e k="Brauerei_Factory_Brauerei_Factory_Input5" v="Cardboard"/>
+		<e k="Brauerei_Factory_Brauerei_Factory_Output_1" v="Beer"/>
+		<e k="Brauerei_Factory_Brauerei_Factory_Output_2" v="Black beer"/>
+		<e k="Brauerei_Factory_Brauerei_Factory_Output_3" v="Light beer"/>
+	</elements>
+</l10n>

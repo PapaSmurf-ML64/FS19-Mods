@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="building/textures/salt.dds"/>
+    </Files>
+    <Materials>
+        <Material name="wasser" materialId="53">
+            <Texture fileId="1"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="carton.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="schild_salt" translation="-3.17918 2.37141 -30.5892" rotation="90 90 -1.46524e-05" scale="0.135 0.15 0.1" static="true" clipDistance="150" nodeId="1235" materialIds="53" castsShadows="true" receiveShadows="true"/>
+    </Scene>
+</i3D>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Sausage_Factory_Sausage_FactoryName" v="Slaughterhouse"/>
+		<e k="Sausage_Factory_Sausage_FactoryDescription" v="This slaughterhouse produces bratwurst, pork chops, and smoked ham."/>
+		<e k="Sausage_Factory_Sausage_productLine_Sausage" v="Slaughterhouse"/>
+		<e k="Sausage_Factory_Sausage_Factory_Input1" v="Pigs"/>
+		<e k="Sausage_Factory_Sausage_Factory_Input2" v="Salt"/>
+		<e k="Sausage_Factory_Sausage_Factory_Input3" v="Pallets"/>
+		<e k="Sausage_Factory_Sausage_Factory_Output_1" v="Bratwurst"/>
+		<e k="Sausage_Factory_Sausage_Factory_Output_2" v="Pork Chops"/>
+		<e k="Sausage_Factory_Sausage_Factory_Output_3" v="Smoked Ham"/>
+	</elements>
+</l10n>

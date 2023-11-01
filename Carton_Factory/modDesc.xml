@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Sawmill</en>
+        <de>Carton Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Sawmill]]></en>
+        <de><![CDATA[Carton Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+	
+	<l10n>
+		<text name="function_carton">
+			<en>This sawmill produces cardboard, pallets, and paper.</en>
+			<de>Die Produktion stellt carton.</de>		
+		</text>
+		<text name="carton">
+			<en>Cardboard</en>
+			<de>carton</de>		
+		</text>
+		<text name="emptyPallets">
+			<en>Empty Pallets</en>
+			<de>emptyPallets</de>		
+		</text>
+		<text name="paper">
+			<en>Paper</en>
+			<de>paper</de>		
+		</text>
+		
+	   
+	</l10n>	
+	
+	
+    <storeItems>
+        <storeItem xmlFilename="CartonFactory.xml" />
+        <storeItem xmlFilename="Paletten/cartonpalett.xml" />
+		<storeItem xmlFilename="Paletten/emptyPallets.xml" />
+		<storeItem xmlFilename="Paletten/paperpalett.xml" />
+		
+    </storeItems>
+	
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+		<sourceFile filename="scripts/register.lua" />
+		<sourceFile filename="scripts/register1.lua" />
+    </extraSourceFiles>
+    
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+	
+	
+	<globalCompany minimumVersion="1.0.0.0" />
+	
+</modDesc>

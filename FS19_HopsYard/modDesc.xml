@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>Edward`s Modding</author>
+    <version>1.0</version>
+    <title>
+        <en>Hops Plantation</en>
+        <de>Hops Yard</de>
+    </title>
+    <description>
+        <en><![CDATA[Hops Plantation]]></en>
+        <de><![CDATA[Grape Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<l10n>
+		<text name="function_hops">
+			<en>This plantation produces hops, requires manure and water.</en>
+			<de>Diese Plantage produziert Hopfen, für den Sie Wasser und Dünger benötigen.</de>
+		</text>
+		<text name="hops">
+			<en>Hops</en>
+			<de>hops</de>
+		</text>
+
+	</l10n>
+
+
+    <storeItems>
+        <storeItem xmlFilename="HopsYard.xml" />
+        <storeItem xmlFilename="Paletten/hopspalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

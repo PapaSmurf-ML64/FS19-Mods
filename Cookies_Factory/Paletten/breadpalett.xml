@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet">
+    <storeData>
+        <name>bread</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>99904</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>22512</indexBufferMemoryUsage>
+        <textureMemoryUsage>4194424</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <price>15</price>
+    </storeData>
+    <base>
+        <filename>Paletten/breadpalett.i3d</filename>
+        <size width="2" length="2" lengthOffset="0"/>
+        <canBeReset>false</canBeReset>
+        <input allowed="false"/>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100"/>
+        </components>
+    </base>
+    <animations>
+        <animation name="breadsack">
+			<part node="milkcan1" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="milkcan1" startTime="0.001" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan2" startTime="0.000" endTime="0.025" visibility="false"/>
+            <part node="milkcan2" startTime="0.025" endTime="1.000" visibility="true"/>
+		    
+			<part node="milkcan3" startTime="0.000" endTime="0.050" visibility="false"/>
+            <part node="milkcan3" startTime="0.050" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan4" startTime="0.000" endTime="0.075" visibility="false"/>
+            <part node="milkcan4" startTime="0.075" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan5" startTime="0.000" endTime="0.100" visibility="false"/>
+            <part node="milkcan5" startTime="0.100" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan6" startTime="0.000" endTime="0.125" visibility="false"/>
+            <part node="milkcan6" startTime="0.125" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan7" startTime="0.000" endTime="0.150" visibility="false"/>
+            <part node="milkcan7" startTime="0.150" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan8" startTime="0.000" endTime="0.175" visibility="false"/>
+            <part node="milkcan8" startTime="0.175" endTime="1.000" visibility="true"/>
+		    
+			<part node="milkcan9" startTime="0.000" endTime="0.200" visibility="false"/>
+            <part node="milkcan9" startTime="0.200" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan10" startTime="0.000" endTime="0.225" visibility="false"/>
+            <part node="milkcan10" startTime="0.225" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan11" startTime="0.000" endTime="0.250" visibility="false"/>
+            <part node="milkcan11" startTime="0.250" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan12" startTime="0.000" endTime="0.275" visibility="false"/>
+            <part node="milkcan12" startTime="0.275" endTime="1.000" visibility="true"/>
+		    
+			<part node="milkcan13" startTime="0.000" endTime="0.300" visibility="false"/>
+            <part node="milkcan13" startTime="0.300" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan14" startTime="0.000" endTime="0.325" visibility="false"/>
+            <part node="milkcan14" startTime="0.325" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan15" startTime="0.000" endTime="0.350" visibility="false"/>
+            <part node="milkcan15" startTime="0.350" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan16" startTime="0.000" endTime="0.375" visibility="false"/>
+            <part node="milkcan16" startTime="0.375" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan17" startTime="0.000" endTime="0.400" visibility="false"/>
+            <part node="milkcan17" startTime="0.400" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan18" startTime="0.000" endTime="0.425" visibility="false"/>
+            <part node="milkcan18" startTime="0.425" endTime="1.000" visibility="true"/>
+		    
+			<part node="milkcan19" startTime="0.000" endTime="0.450" visibility="false"/>
+            <part node="milkcan19" startTime="0.450" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan20" startTime="0.000" endTime="0.475" visibility="false"/>
+            <part node="milkcan20" startTime="0.475" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan21" startTime="0.000" endTime="0.500" visibility="false"/>
+            <part node="milkcan21" startTime="0.500" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan22" startTime="0.000" endTime="0.525" visibility="false"/>
+            <part node="milkcan22" startTime="0.525" endTime="1.000" visibility="true"/>
+		    
+			<part node="milkcan23" startTime="0.000" endTime="0.550" visibility="false"/>
+            <part node="milkcan23" startTime="0.550" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan24" startTime="0.000" endTime="0.575" visibility="false"/>
+            <part node="milkcan24" startTime="0.575" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan25" startTime="0.000" endTime="0.600" visibility="false"/>
+            <part node="milkcan25" startTime="0.600" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan26" startTime="0.000" endTime="0.625" visibility="false"/>
+            <part node="milkcan26" startTime="0.625" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan27" startTime="0.000" endTime="0.650" visibility="false"/>
+            <part node="milkcan27" startTime="0.650" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan28" startTime="0.000" endTime="0.675" visibility="false"/>
+            <part node="milkcan28" startTime="0.675" endTime="1.000" visibility="true"/>
+		    
+			<part node="milkcan29" startTime="0.000" endTime="0.700" visibility="false"/>
+            <part node="milkcan29" startTime="0.700" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan30" startTime="0.000" endTime="0.725" visibility="false"/>
+            <part node="milkcan30" startTime="0.725" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan31" startTime="0.000" endTime="0.750" visibility="false"/>
+            <part node="milkcan31" startTime="0.750" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan32" startTime="0.000" endTime="0.775" visibility="false"/>
+            <part node="milkcan32" startTime="0.775" endTime="1.000" visibility="true"/>
+		    
+			<part node="milkcan33" startTime="0.000" endTime="0.800" visibility="false"/>
+            <part node="milkcan33" startTime="0.800" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan34" startTime="0.000" endTime="0.825" visibility="false"/>
+            <part node="milkcan34" startTime="0.825" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan35" startTime="0.000" endTime="0.850" visibility="false"/>
+            <part node="milkcan35" startTime="0.850" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan36" startTime="0.000" endTime="0.875" visibility="false"/>
+            <part node="milkcan36" startTime="0.875" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan37" startTime="0.000" endTime="0.900" visibility="false"/>
+            <part node="milkcan37" startTime="0.900" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan38" startTime="0.000" endTime="0.925" visibility="false"/>
+            <part node="milkcan38" startTime="0.925" endTime="1.000" visibility="true"/>
+		    
+			<part node="milkcan39" startTime="0.000" endTime="0.950" visibility="false"/>
+            <part node="milkcan39" startTime="0.950" endTime="1.000" visibility="true"/>
+			
+			<part node="milkcan40" startTime="0.000" endTime="0.975" visibility="false"/>
+            <part node="milkcan40" startTime="0.975" endTime="1.000" visibility="true"/>
+		 </animation>
+    </animations>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="bread" capacity="4000">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="breadsack"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="0>" emptySpeed="1000" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true">
+            <trigger node="dischargeTrigger" />
+        </dischargeNode>
+    </dischargeable>
+    
+    <dynamicMount triggerNode="dynamicMountTrigger"/>
+    
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltShape"/>
+        </meshNodes>
+    </tensionBeltObject>
+    
+    <i3dMappings>
+        <i3dMapping id="dynamicMountTrigger" node="0>0"/>
+        <i3dMapping id="tensionBeltNode" node="0>1"/>
+        <i3dMapping id="milkcan1" node="0>2|0"/>
+        <i3dMapping id="milkcan2" node="0>2|1"/>
+        <i3dMapping id="milkcan3" node="0>2|2"/>
+        <i3dMapping id="milkcan4" node="0>2|3"/>
+        <i3dMapping id="milkcan5" node="0>2|4"/>
+        <i3dMapping id="milkcan6" node="0>2|5"/>
+		<i3dMapping id="milkcan7" node="0>2|6"/>
+        <i3dMapping id="milkcan8" node="0>2|7"/>
+        <i3dMapping id="milkcan9" node="0>2|8"/>
+		<i3dMapping id="milkcan10" node="0>2|9"/>
+        <i3dMapping id="milkcan11" node="0>2|10"/>
+        <i3dMapping id="milkcan12" node="0>2|11"/>
+        <i3dMapping id="milkcan13" node="0>2|12"/>
+        <i3dMapping id="milkcan14" node="0>2|13"/>
+        <i3dMapping id="milkcan15" node="0>2|14"/>
+        <i3dMapping id="milkcan16" node="0>2|15"/>
+		<i3dMapping id="milkcan17" node="0>2|16"/>
+        <i3dMapping id="milkcan18" node="0>2|17"/>
+        <i3dMapping id="milkcan19" node="0>2|18"/>
+		<i3dMapping id="milkcan20" node="0>2|19"/>
+		<i3dMapping id="milkcan21" node="0>2|20"/>
+        <i3dMapping id="milkcan22" node="0>2|21"/>
+        <i3dMapping id="milkcan23" node="0>2|22"/>
+        <i3dMapping id="milkcan24" node="0>2|23"/>
+        <i3dMapping id="milkcan25" node="0>2|24"/>
+        <i3dMapping id="milkcan26" node="0>2|25"/>
+		<i3dMapping id="milkcan27" node="0>2|26"/>
+        <i3dMapping id="milkcan28" node="0>2|27"/>
+        <i3dMapping id="milkcan29" node="0>2|28"/>
+		<i3dMapping id="milkcan30" node="0>2|29"/>
+        <i3dMapping id="milkcan31" node="0>2|30"/>
+        <i3dMapping id="milkcan32" node="0>2|31"/>
+        <i3dMapping id="milkcan33" node="0>2|32"/>
+        <i3dMapping id="milkcan34" node="0>2|33"/>
+        <i3dMapping id="milkcan35" node="0>2|34"/>
+        <i3dMapping id="milkcan36" node="0>2|35"/>
+		<i3dMapping id="milkcan37" node="0>2|36"/>
+        <i3dMapping id="milkcan38" node="0>2|37"/>
+        <i3dMapping id="milkcan39" node="0>2|38"/>
+		 <i3dMapping id="milkcan40" node="0>2|39"/>
+        <i3dMapping id="dischargeTrigger" node="0>3"/>
+        <i3dMapping id="boardPallet_vis" node="0>4"/>
+        <i3dMapping id="tensionBeltShape" node="0>4|0"/>
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Huehner_Factory_Huehner_FactoryName" v="Chicken Farm"/>
+		<e k="Huehner_Factory_Huehner_FactoryDescription" v="This farm raises chickens and produces eggs."/>
+		<e k="Huehner_Factory_Huehner_productLine_Huehner" v="Chicken Farm"/>
+		<e k="Huehner_Factory_Huehner_Factory_Input1" v="Barley/Wheat"/>
+		<e k="Huehner_Factory_Huehner_Factory_Input2" v="Water"/>
+		<e k="Huehner_Factory_Huehner_Factory_Input3" v="Pallets"/>
+		<e k="Huehner_Factory_Huehner_Factory_Input4" v="Cardboard"/>
+		<e k="Huehner_Factory_Huehner_Factory_Input5" v="Chicken"/>
+		<e k="Huehner_Factory_Huehner_Factory_Output_1" v="Egg"/>
+
+	</elements>
+</l10n>

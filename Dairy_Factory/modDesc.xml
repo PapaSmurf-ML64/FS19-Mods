@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Dairy</en>
+        <de>Cheese Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Dairy]]></en>
+        <de><![CDATA[Cheese Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<l10n>
+		<text name="function_cheese">
+			<en>This dairy produces cheese, ice cream, and butter.</en>
+			<de>Die Produktion stellt cheese.</de>
+		</text>
+		<text name="cheese">
+			<en>Cheese</en>
+			<de>cheese</de>
+		</text>
+		<text name="icecream">
+			<en>Ice Cream</en>
+			<de>icecream</de>
+		</text>
+		<text name="butter">
+			<en>Butter</en>
+			<de>butter</de>
+		</text>
+		<text name="emptypallets">
+			<en>Empty Pallets</en>
+			<de>emptypallets</de>
+		</text>
+		<text name="carton">
+			<en>Cardboard</en>
+			<de>carton</de>
+		</text>
+
+
+	</l10n>
+
+
+    <storeItems>
+        <storeItem xmlFilename="DairyFactory.xml" />
+        <storeItem xmlFilename="Paletten/cheesepalett.xml" />
+		<storeItem xmlFilename="Paletten/icecreampalett.xml" />
+		<storeItem xmlFilename="Paletten/butterpalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+		<sourceFile filename="scripts/register.lua" />
+		<sourceFile filename="scripts1/register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

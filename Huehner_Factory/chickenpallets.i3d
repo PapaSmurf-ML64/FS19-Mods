@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fillablePallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/maps/textures/european/props/euroPallet01_normal.png"/>
+    <File fileId="2" filename="textures/chicken_diffuse.dds"/>
+    <File fileId="3" filename="textures/wood2_diffuse.dds"/>
+    <File fileId="4" filename="textures/wooden.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="6">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="chicken_Mat" materialId="69">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="chickenbox_Mat" materialId="70">
+      <Texture fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chickenpallets.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet_main_component1" dynamic="true" compound="true" collisionMask="8397058" density="0.01" clipDistance="300" nodeId="26" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="dynamicMountTrigger" translation="0 0.175 0" visibility="false" kinematic="true" trigger="true" collisionMask="8192" nodeId="27" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillUnit" nodeId="28">
+        <Shape shapeId="3" name="fillVolume" translation="0 0.589827 0" nodeId="29" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="4" name="exactFillRootNode" translation="0 0.893304 0" visibility="false" kinematic="true" compound="true" collisionMask="1073741824" nodeId="30" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="5" name="fillTrigger" translation="0 0.348315 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1082130432" clipDistance="300" nodeId="31" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+      <TransformGroup name="fillablePallet_vis" translation="0 0 0.00915289" scale="0.965 1 0.8" nodeId="32">
+        <TransformGroup name="chicken2" translation="0.0557044 0.252164 0.352588" rotation="2.32997e-05 -90 -3.17079e-05" nodeId="75">
+          <Shape shapeId="6" name="chicken" translation="0.076 0 -0.136" rotation="0 24.28 0" nodeId="76" materialIds="69" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="chickenbox" translation="-0.206237 0 0.139348" rotation="0 -24.28 0" scale="1.4 1.2 1.8" nodeId="77" materialIds="70" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="6" name="chicken" translation="-0.554998 3.17643e-08 0.665006" rotation="180 32.6599 180" nodeId="78" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.135354 0 -0.930099" rotation="0 78.5436 0" nodeId="79" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.231895 2.13341e-09 -0.586662" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="80" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="0.45142 0 -0.0904284" rotation="0 -20.171 0" nodeId="81" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.377346 0 -0.863019" rotation="0 78.5436 0" nodeId="82" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.147209 -1.36716e-09 0.108539" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="83" materialIds="69" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="chicken2" translation="0.0557044 0.252164 -0.237445" rotation="2.32997e-05 -90 -3.17079e-05" nodeId="147">
+          <Shape shapeId="6" name="chicken" translation="0.076 0 -0.136" rotation="0 24.28 0" nodeId="148" materialIds="69" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="chickenbox" translation="-0.206237 0 0.139348" rotation="0 -24.28 0" scale="1.4 1.2 1.8" nodeId="149" materialIds="70" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="6" name="chicken" translation="-0.554998 3.17643e-08 0.665006" rotation="180 32.6599 180" nodeId="150" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.135354 0 -0.930099" rotation="0 78.5436 0" nodeId="151" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.231895 2.13341e-09 -0.586662" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="152" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="0.45142 0 -0.0904284" rotation="0 -20.171 0" nodeId="153" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.377346 0 -0.863019" rotation="0 78.5436 0" nodeId="154" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.147209 -1.36716e-09 0.108539" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="155" materialIds="69" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="chicken2" translation="0.0557044 0.73 -0.237445" rotation="2.32997e-05 -90 -3.17079e-05" nodeId="156">
+          <Shape shapeId="6" name="chicken" translation="0.076 0 -0.136" rotation="0 24.28 0" nodeId="157" materialIds="69" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="chickenbox" translation="-0.206237 0 0.139348" rotation="0 -24.28 0" scale="1.4 1.2 1.8" nodeId="158" materialIds="70" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="6" name="chicken" translation="-0.554998 3.17643e-08 0.665006" rotation="180 32.6599 180" nodeId="159" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.135354 0 -0.930099" rotation="0 78.5436 0" nodeId="160" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.231895 2.13341e-09 -0.586662" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="161" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="0.45142 0 -0.0904284" rotation="0 -20.171 0" nodeId="162" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.377346 0 -0.863019" rotation="0 78.5436 0" nodeId="163" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.147209 -1.36716e-09 0.108539" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="164" materialIds="69" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="chicken2" translation="0.0557044 0.73 0.352588" rotation="2.32997e-05 -90 -3.17079e-05" nodeId="165">
+          <Shape shapeId="6" name="chicken" translation="0.076 0 -0.136" rotation="0 24.28 0" nodeId="166" materialIds="69" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="chickenbox" translation="-0.206237 0 0.139348" rotation="0 -24.28 0" scale="1.4 1.2 1.8" nodeId="167" materialIds="70" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="6" name="chicken" translation="-0.554998 3.17643e-08 0.665006" rotation="180 32.6599 180" nodeId="168" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.135354 0 -0.930099" rotation="0 78.5436 0" nodeId="169" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.231895 2.13341e-09 -0.586662" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="170" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="0.45142 0 -0.0904284" rotation="0 -20.171 0" nodeId="171" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.377346 0 -0.863019" rotation="0 78.5436 0" nodeId="172" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.147209 -1.36716e-09 0.108539" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="173" materialIds="69" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="chicken2" translation="0.0557044 1.21 0.352588" rotation="2.32997e-05 -90 -3.17079e-05" nodeId="174">
+          <Shape shapeId="6" name="chicken" translation="0.076 0 -0.136" rotation="0 24.28 0" nodeId="175" materialIds="69" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="chickenbox" translation="-0.206237 0 0.139348" rotation="0 -24.28 0" scale="1.4 1.2 1.8" nodeId="176" materialIds="70" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="6" name="chicken" translation="-0.554998 3.17643e-08 0.665006" rotation="180 32.6599 180" nodeId="177" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.135354 0 -0.930099" rotation="0 78.5436 0" nodeId="178" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.231895 2.13341e-09 -0.586662" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="179" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="0.45142 0 -0.0904284" rotation="0 -20.171 0" nodeId="180" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.377346 0 -0.863019" rotation="0 78.5436 0" nodeId="181" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.147209 -1.36716e-09 0.108539" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="182" materialIds="69" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="chicken2" translation="0.0557044 1.21 -0.237445" rotation="2.32997e-05 -90 -3.17079e-05" nodeId="183">
+          <Shape shapeId="6" name="chicken" translation="0.076 0 -0.136" rotation="0 24.28 0" nodeId="184" materialIds="69" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="chickenbox" translation="-0.206237 0 0.139348" rotation="0 -24.28 0" scale="1.4 1.2 1.8" nodeId="185" materialIds="70" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="6" name="chicken" translation="-0.554998 3.17643e-08 0.665006" rotation="180 32.6599 180" nodeId="186" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.135354 0 -0.930099" rotation="0 78.5436 0" nodeId="187" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.231895 2.13341e-09 -0.586662" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="188" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="0.45142 0 -0.0904284" rotation="0 -20.171 0" nodeId="189" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.377346 0 -0.863019" rotation="0 78.5436 0" nodeId="190" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="chicken" translation="-0.147209 -1.36716e-09 0.108539" rotation="5.95716e-06 87.2245 5.94982e-06" nodeId="191" materialIds="69" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <Shape shapeId="8" name="WhiskeyPalletVis" translation="0 0 -0.000229858" scale="1 1 1.2" clipDistance="300" nodeId="54" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="9" name="tensionBeltShape" visibility="false" clipDistance="10" nodeId="55" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="56">
+        <Shape shapeId="10" name="solidColi" translation="0 0.175 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="57" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="11" name="transportPallet_col" translation="-0.622301 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="58" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="12" name="transportPallet_col1" translation="-0.622301 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="59" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="13" name="transportPallet_col2" translation="0.622586 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="60" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="14" name="transportPallet_col3" translation="0.622586 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="61" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="14" name="transportPallet_col4" translation="0.00271691 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="62" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="13" name="transportPallet_col5" translation="0.00271691 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="63" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="15" name="transportPallet_col6" translation="-0.622301 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="64" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="16" name="transportPallet_col7" translation="0.622586 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="65" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="16" name="transportPallet_col8" translation="0.00271691 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="66" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="26">
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillTrigger" type="string" value="3"/>
+      <Attribute name="fillTriggerClass" type="string" value="FillTrigger"/>
+      <Attribute name="fillType" type="string" value="chicken2"/>
+      <Attribute name="fillableTrigger" type="string" value="5"/>
+      <Attribute name="meshNodes" type="string" value="0"/>
+      <Attribute name="movingPlane" type="string" value="0>2|0"/>
+      <Attribute name="movingPlaneMaxY" type="float" value="0.54"/>
+      <Attribute name="movingPlaneMinY" type="float" value="-0.07"/>
+      <Attribute name="raycastNode" type="string" value="4"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Sugar_Factory_Sugar_FactoryName" v="Sugar Factory"/>
+		<e k="Sugar_Factory_Sugar_FactoryDescription" v="This factory produces sugar."/>
+		<e k="Sugar_Factory_Sugar_productLine_Sugar" v="Sugar Factory"/>
+		<e k="Sugar_Factory_Sugar_Factory_Input1" v="Sugar Beet/Sugarcane"/>
+		<e k="Sugar_Factory_Sugar_Factory_Input2" v="Water"/>
+		<e k="Sugar_Factory_Sugar_Factory_Input3" v="Pallets"/>
+		<e k="Sugar_Factory_Sugar_Factory_Output_1" v="Sugar"/>
+
+	</elements>
+</l10n>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Chips_Factory_Chips_FactoryName" v="Potato Processing Facility"/>
+		<e k="Chips_Factory_Chips_FactoryDescription" v="This factory makes chips, fries, and mashed potatoes."/>
+		<e k="Chips_Factory_Chips_productLine_Chips" v="Potato Processing Facility"/>
+		<e k="Chips_Factory_Chips_Factory_Input1" v="Potatoes"/>
+		<e k="Chips_Factory_Chips_Factory_Input2" v="Oil"/>
+		<e k="Chips_Factory_Chips_Factory_Input3" v="Salt"/>
+		<e k="Chips_Factory_Chips_Factory_Input4" v="Water"/>
+		<e k="Chips_Factory_Chips_Factory_Input5" v="Pallets"/>
+		<e k="Chips_Factory_Chips_Factory_Input6" v="Cardboard"/>
+		<e k="Chips_Factory_Chips_Factory_Output_1" v="Chips"/>
+		<e k="Chips_Factory_Chips_Factory_Output_2" v="French Fries"/>
+		<e k="Chips_Factory_Chips_Factory_Output_3" v="Mashed Potatoes"/>
+	</elements>
+</l10n>

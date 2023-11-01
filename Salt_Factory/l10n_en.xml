@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Salt_Factory_Salt_FactoryName" v="Salt Factory"/>
+		<e k="Salt_Factory_Salt_FactoryDescription" v="This factory produces salt."/>
+		<e k="Salt_Factory_Salt_productLine_Salt" v="Salt Factory"/>
+		<e k="Salt_Factory_Salt_Factory_Input1" v="Water"/>
+		<e k="Salt_Factory_Salt_Factory_Output_1" v="Salt"/>
+
+	</elements>
+</l10n>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Vodka_Factory_Vodka_FactoryName" v="Vodka Distillery"/>
+		<e k="Vodka_Factory_Vodka_FactoryDescription" v="This distillery produces vodka."/>
+		<e k="Vodka_Factory_Vodka_productLine_Vodka" v="Vodka Distillery"/>
+		<e k="Vodka_Factory_Vodka_Factory_Input1" v="Barley\Corn"/>
+		<e k="Vodka_Factory_Vodka_Factory_Input2" v="Potatoes\Beets"/>
+		<e k="Vodka_Factory_Vodka_Factory_Output_1" v="Vodka"/>
+
+	</elements>
+</l10n>

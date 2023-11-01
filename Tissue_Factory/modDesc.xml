@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Textile Factory</en>
+        <de>Tissue Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Textile Factory]]></en>
+        <de><![CDATA[Tissue Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<l10n>
+		<text name="function_tissue">
+			<en>This factory produces textiles.</en>
+			<de>Die Produktion stellt tissue.</de>
+		</text>
+		<text name="tissue">
+			<en>Textile</en>
+			<de>tissue</de>
+		</text>
+
+	</l10n>
+
+
+    <storeItems>
+        <storeItem xmlFilename="TissueFactory.xml" />
+        <storeItem xmlFilename="Paletten/tissuepalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

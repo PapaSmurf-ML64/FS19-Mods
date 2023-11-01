@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="textures/DoorsMetalBig0065_S.dds"/>
+        <File fileId="4" filename="textures/gelbe_Streifen.dds"/>
+        <File fileId="2" filename="textures/gif20.dds"/>
+    </Files>
+    <Materials>
+        <Material name="Muellpresse" materialId="30">
+            <Texture fileId="1"/>
+        </Material>
+        <Material name="felge1" materialId="17"/>
+        <Material name="material_2" materialId="12" diffuseColor="0.8 0.8 0.8 1"/>
+        <Material name="Buero_rot" materialId="52">
+            <Texture fileId="2"/>
+        </Material>
+        <Material name="TorStreifen" materialId="32">
+            <Texture fileId="4"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="door.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="Ladetor9" translation="15.1462 2.506 34.8708" rotation="-0 90 0" scale="1 1.12714 1" static="true" trigger="true" collisionMask="99614720" nodeId="615" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <Shape shapeId="2" name="Ladetor" translation="0.0188452 -1.21444 -2.69457" kinematic="true" nodeId="616" materialIds="30" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="Tore.000" translation="1.8816 -10.229 8.771" rotation="-0 180 0" scale="1.06 1 1" static="true" nodeId="617" materialIds="52,12,32" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+    </Scene>
+</i3D>

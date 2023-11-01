@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="Games/Farming Simulator 19/data/maps/textures/european/props/euroPallet01_diffuse.png"/>
+        <File fileId="2" filename="Games/Farming Simulator 19/data/maps/textures/european/props/euroPallet01_normal.png"/>
+        <File fileId="3" filename="Games/Farming Simulator 19/data/maps/textures/european/props/euroPallet01_specular.png"/>
+    </Files>
+    <Materials>
+        <Material name="euroPallet01_mat" materialId="6">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="empty.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="fillBags" nodeId="28">
+            <Shape shapeId="1" name="bag1" translation="0 0.184212 0" clipDistance="300" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="1" name="bag1" translation="0 0.184212 0" clipDistance="300" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="1" name="bag1" translation="0 0.184212 0" clipDistance="300" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+            </Shape>
+            <Shape shapeId="1" name="bag2" translation="0 0.737449 0" clipDistance="300" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="1" name="bag1" translation="0 0.184212 0" clipDistance="300" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="1" name="bag1" translation="0 0.184212 0" clipDistance="300" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+            </Shape>
+            <Shape shapeId="1" name="bag3" translation="0 1.2874 0" clipDistance="300" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="1" name="bag1" translation="0 0.184212 0" clipDistance="300" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="1" name="bag1" translation="0 0.184212 0" clipDistance="300" nodeId="37" materialIds="6" castsShadows="true" receiveShadows="true">
+                        <Shape shapeId="1" name="bag1" translation="0 0.184212 0" clipDistance="300" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                    </Shape>
+                </Shape>
+            </Shape>
+        </TransformGroup>
+    </Scene>
+</i3D>

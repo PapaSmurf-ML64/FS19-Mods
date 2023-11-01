@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Flour Mill</en>
+        <de>Flour Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Flour Mill]]></en>
+        <de><![CDATA[Flour Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<l10n>
+		<text name="function_flour">
+			<en>This factory produces flour.</en>
+			<de>Die Produktion stellt flour.</de>
+		</text>
+		<text name="flour">
+			<en>Flour</en>
+			<de>flour</de>
+		</text>
+
+	</l10n>
+
+
+    <storeItems>
+        <storeItem xmlFilename="FlourFactory.xml" />
+        <storeItem xmlFilename="Paletten/flourpalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

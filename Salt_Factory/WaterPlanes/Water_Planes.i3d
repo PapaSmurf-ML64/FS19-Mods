@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="shaders/oceanShader.xml"/>
+    <File fileId="2" filename="water_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="waterPlane10" materialId="4" diffuseColor="1 1 1 1" specularColor="1 1 1" customShaderId="3">
+      <Normalmap fileId="2"/>
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+      <CustomParameter name="bumpSpeedScale" value="1 0.2 0.02 1"/>
+      <CustomParameter name="underwaterFogColor" value="0.15 0.25 0.3 0.4"/>
+      <CustomParameter name="windScale" value="0.25 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Water_Planes.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="water_planes" clipDistance="3000" nodeId="19">
+      <Shape shapeId="1" name="water_plane1" translation="1.06873e-05 0 -244.498" rotation="0 -90 0" clipDistance="1500" nodeId="20" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="2" name="water_plane2" translation="0 0 16.6321" clipDistance="500" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="water_plane3" translation="5 0 38.4821" clipDistance="600" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="4" name="water_plane4" translation="5 0 62.5968" clipDistance="600" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="5" name="water_plane5" translation="12.5 0 94.0733" clipDistance="600" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="6" name="water_plane6" translation="40.7 0 168.852" clipDistance="800" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="7" name="water_plane7" translation="-64.322 0 142.006" clipDistance="1000" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="8" name="water_plane8" translation="-170.1 0 142.161" clipDistance="1500" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="9" name="water_plane9" translation="138.25 0 3.79216" clipDistance="2500" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="10" name="water_plane10" translation="-166.873 0 -31.9403" rotation="0 90 0" clipDistance="3000" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="11" name="water_plane11" translation="312.502 0 3.24227" clipDistance="3000" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="12" name="water_plane12" translation="144.197 -1.82657e-12 276.743" rotation="-180 90 -180" clipDistance="3000" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="13" name="water_plane13" translation="321.748 8.07545e-05 291.264" rotation="-1.72107e-10 -90 1.73028e-05" clipDistance="3000" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Oil Processing Facility</en>
+        <de>ColzaOil Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Oil Processing Facility]]></en>
+        <de><![CDATA[ColzaOil Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<l10n>
+		<text name="function_colzaoil">
+			<en>This factory produces vegetable oil.</en>
+			<de>Die Produktion stellt colzaoil.</de>
+		</text>
+		<text name="colzaoil">
+			<en>Vegetable Oil</en>
+			<de>colzaoil</de>
+		</text>
+
+	</l10n>
+
+
+    <storeItems>
+        <storeItem xmlFilename="ColzaOilFactory.xml" />
+        <storeItem xmlFilename="Paletten/colzaoilpalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

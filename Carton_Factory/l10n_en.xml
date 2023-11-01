@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Carton_Factory_Carton_FactoryName" v="Sawmill"/>
+		<e k="Carton_Factory_Carton_FactoryDescription" v="This sawmill produces cardboard, pallets, and paper."/>
+		<e k="Carton_Factory_Carton_productLine_Carton" v="Sawmill"/>
+		<e k="Carton_Factory_Carton_Factory_Input1" v="Wood Chips"/>
+		<e k="Carton_Factory_Carton_Factory_Input2" v="Logs"/>
+		<e k="Carton_Factory_Carton_Factory_Input3" v="Water"/>
+		<e k="Carton_Factory_Carton_Factory_Output_1" v="Cardboard"/>
+		<e k="Carton_Factory_Carton_Factory_Output_2" v="Pallets"/>
+		<e k="Carton_Factory_Carton_Factory_Output_3" v="Paper"/>
+	</elements>
+</l10n>

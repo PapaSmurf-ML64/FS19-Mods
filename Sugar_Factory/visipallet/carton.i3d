@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="carton.dds"/>
+        <File fileId="2" filename="texture/decal_2.dds"/>
+        <File fileId="4" filename="texture/etiketka.dds"/>
+    </Files>
+    <Materials>
+        <Material name="blinn1" materialId="8" specularColor="0.494118 1 0.494118">
+            <Texture fileId="2"/>
+        </Material>
+        <Material name="acmat_0" materialId="4">
+            <Texture fileId="1"/>
+        </Material>
+        <Material name="blinn1" materialId="6" specularColor="0.494118 1 0.494118">
+            <Texture fileId="4"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="carton.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="fillBags" translation="0 0 0.00915289" scale="0.965 1 0.8" nodeId="31">
+            <Shape shapeId="1" name="carton" translation="-0.00140987 0.25 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140989 0.4 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140993 0.55 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140993 0.7 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="35" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140993 0.85 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="36" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140993 1 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140993 1.15 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140993 1.3 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140993 1.45 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="40" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="carton" translation="-0.00140993 1.6 -0.00364398" rotation="-180 90 180" scale="2.26015 0.287964 2.92383" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true">
+                <TransformGroup name="transform" translation="0.475734 -1.897 -0.538459" scale="1 1.2 1" nodeId="42">
+                    <Shape shapeId="2" name="decal_1" translation="-0.210495 -0.478 0.5358" rotation="-90 -90 5.54379e-06" scale="0.0573825 1 5.15885" clipDistance="200" nodeId="43" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.475225 -0.30958 0.26604" rotation="-90 -0 0" scale="0.0565709 1 4.83008" clipDistance="200" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.745122 -0.223989 0.535589" rotation="90 90 -180" scale="0.0613493 1 4.6507" clipDistance="200" nodeId="45" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.476434 2.03384 0.535934" rotation="0 90 0" scale="0.0576704 1 0.548548" clipDistance="200" nodeId="46" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.47437 2.02731 0.540275" rotation="180 0 180" scale="0.0593079 1 0.548916" clipDistance="200" nodeId="47" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.477006 -0.335386 0.805578" rotation="90 -0 0" scale="0.0614274 1 4.84704" clipDistance="200" nodeId="48" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.689571 1.57605 0.271401" rotation="-90 0 180" scale="0.0614428 1 0.604311" clipDistance="200" nodeId="49" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.744547 1.57605 0.736829" rotation="-90 -90 180" scale="0.0614428 1 0.604311" clipDistance="200" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.277214 1.57605 0.806186" rotation="-90 -180 180" scale="0.0614428 1 0.604311" clipDistance="200" nodeId="51" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="2" name="decal_1" translation="-0.209585 1.57605 0.330184" rotation="-90 -270 180" scale="0.0614428 1 0.604311" clipDistance="200" nodeId="52" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+            </Shape>
+        </TransformGroup>
+    </Scene>
+</i3D>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Tissue_Factory_Tissue_FactoryName" v="Textile Factory"/>
+		<e k="Tissue_Factory_Tissue_FactoryDescription" v="This factory produces textiles."/>
+		<e k="Tissue_Factory_Tissue_productLine_Tissue" v="Textile Factory"/>
+		<e k="Tissue_Factory_Tissue_Factory_Input1" v="Cotton\Wool"/>
+		<e k="Tissue_Factory_Tissue_Factory_Output_1" v="Textile"/>
+
+	</elements>
+</l10n>

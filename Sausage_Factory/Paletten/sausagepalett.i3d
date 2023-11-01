@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="$data/maps/textures/european/props/euroPallet01_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/textures/european/props/euroPallet01_normal.png"/>
+    <File fileId="10" filename="$data/maps/textures/european/props/euroPallet01_specular.png"/>
+    <File fileId="6" filename="textures/lemon_diffuse5.dds"/>
+    <File fileId="2" filename="textures/plasticBox_diffuse.png"/>
+    <File fileId="3" filename="textures/plasticBox_normal.png"/>
+    <File fileId="4" filename="textures/plasticBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="7">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Default" materialId="116" diffuseColor="1 0 1 1">
+    </Material>
+    <Material name="adStrip" materialId="117" specularColor="0.164706 1 0.164706" alphaBlending="true">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="plasticBox01_mat" materialId="115">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sausagepalett.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet_sausage" dynamic="true" compound="true" collisionMask="25178120" density="0.1" clipDistance="300" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="dynamicMountTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="3" name="tensionBeltNode" translation="0 0.722266 0" visibility="false" clipDistance="100" nodeId="31" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="fillBags" translation="0 0.022 0.00211129" scale="0.9 0.9 0.83" nodeId="32">
+        <Shape shapeId="4" name="plasticBox" translation="-0.42797 0.212409 -0.00982283" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="121" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="122" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="0.407943 0.212409 -0.0098228" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="123" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="124" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="0.407943 0.412203 -0.0098228" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="125" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="126" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="-0.42797 0.416349 -0.00982283" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="127" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="128" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="-0.42797 0.619325 -0.00982283" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="129" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="130" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="0.407943 0.614324 -0.0098228" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="131" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="132" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="0.407943 0.824982 -0.0098228" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="133" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="134" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="-0.42797 0.827271 -0.00982283" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="135" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="136" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="-0.42797 1.03412 -0.00982283" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="137" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="138" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="0.407943 1.03 -0.0098228" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="139" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="140" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="0.407943 1.23852 -0.0098228" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="141" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="142" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="-0.42797 1.23957 -0.00982283" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="143" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="144" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="-0.42797 1.44397 -0.00982283" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="145" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="146" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="plasticBox" translation="0.407943 1.43741 -0.0098228" rotation="-0 -90 0" scale="1.1 0.2 0.8" clipDistance="50" nodeId="147" materialIds="115" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="adStrip" translation="-0.00616348 0.91679 -0.000953547" rotation="-80 90 0" scale="1.7 3.5 2" clipDistance="600" nodeId="148" materialIds="116,117" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="6" name="dischargeTrigger" translation="1.42109e-16 0.759947 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="99" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="7" name="apfelPalletVis" clipDistance="300" nodeId="100" materialIds="7" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="8" name="tensionBeltShape" visibility="false" clipDistance="10" nodeId="101" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <TransformGroup name="collisions" translation="0 0.0173614 0" nodeId="102">
+        <Shape shapeId="9" name="solidColi" translation="0 0.175 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="103" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="10" name="colPart01" translation="0.00271691 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="104" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="11" name="colPart02" translation="0.622586 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="105" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="12" name="colPart03" translation="-0.622301 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="106" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="13" name="colPart04" translation="0.00271691 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="107" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="14" name="colPart05" translation="0.00271691 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="108" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="15" name="colPart06" translation="0.622586 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="109" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="16" name="colPart07" translation="0.622586 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="110" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="17" name="colPart08" translation="-0.622301 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="111" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="18" name="colPart09" translation="-0.622301 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="112" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="29">
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="sausage"/>
+      <Attribute name="meshNodes" type="string" value="0 0|6"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

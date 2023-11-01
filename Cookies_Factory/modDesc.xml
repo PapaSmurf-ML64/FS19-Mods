@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Bakery</en>
+        <de>Cookies Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Bakery]]></en>
+        <de><![CDATA[Cookies Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<l10n>
+		<text name="function_cookies">
+			<en>This factory produces bread, cookies, and donuts.</en>
+			<de>Die Produktion stellt cookies.</de>
+		</text>
+		<text name="cookies">
+			<en>Cookies</en>
+			<de>cookies</de>
+		</text>
+		<text name="bread">
+			<en>Bread</en>
+			<de>bread</de>
+		</text>
+		<text name="donuts">
+			<en>Donuts</en>
+			<de>donuts</de>
+		</text>
+
+	</l10n>
+
+
+    <storeItems>
+        <storeItem xmlFilename="CookiesFactory.xml" />
+        <storeItem xmlFilename="Paletten/cookiespalett.xml" />
+		<storeItem xmlFilename="Paletten/breadpalett.xml" />
+		<storeItem xmlFilename="Paletten/donutspalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+		<sourceFile filename="scripts/register.lua" />
+		<sourceFile filename="scripts1/register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

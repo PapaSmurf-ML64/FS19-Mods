@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet">
+    <storeData>
+        <name>Chicken Farm</name>
+        <functions>
+            <function>This farm raises chickens and produces eggs.</function>
+        </functions>
+        <specs>
+            <capacity>500</capacity>
+            <fillTypes>chicken2</fillTypes>
+        </specs>
+        <image>store_palletChicken.png</image>
+        <price>1000</price>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>pallets</category>
+        <financeCategory>PURCHASE_SEEDS</financeCategory>
+        <vertexBufferMemoryUsage>24768</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>2496</indexBufferMemoryUsage>
+        <textureMemoryUsage>6291560</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>chickenpallets.i3d</filename>
+        <size width="2" length="1.5" lengthOffset="0" />
+        <canBeReset>false</canBeReset>
+        <input allowed="false"/>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="280"/>
+        </components>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="chicken2" capacity="500" updateMass="false" startFillType="chicken2" startFillLevel="500" >
+                        <exactFillRootNode node="exactFillRootNode" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" maxAllowedHeapAngle="0" fillUnitIndex="1" />
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+    </fillVolume>
+
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="fillablePallet_main_component1" emptySpeed="99999" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" />
+    </dischargeable>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" />
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="fillablePallet_vis"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <i3dMappings>
+        <i3dMapping id="fillablePallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="fillVolume" node="0>1|0" />
+        <i3dMapping id="exactFillRootNode" node="0>1|1" />
+        <i3dMapping id="fillTrigger" node="0>1|2" />
+        <i3dMapping id="fillablePallet_vis" node="0>2" />
+    </i3dMappings>
+</vehicle>

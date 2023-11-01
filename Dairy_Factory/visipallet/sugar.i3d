@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="3" filename="zuckersack.dds"/>
+        <File fileId="1" filename="zuckersack1.dds"/>
+    </Files>
+    <Materials>
+        <Material name="fertilizer_bag" materialId="7" specularColor="0.137255 1 0.137255">
+            <Texture fileId="1"/>
+        </Material>
+        <Material name="fertilizer_bag" materialId="4" specularColor="0.137255 1 0.137255">
+            <Texture fileId="3"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="sugar.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="fillBags" translation="0 -0.00342231 0" scale="1 1.2 1" nodeId="29">
+            <Shape shapeId="1" name="pellet1" translation="0.491349 0.21234 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="30" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet2" translation="0.0180605 0.21839 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet3" translation="0.0113308 0.372907 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet4" translation="-0.49352 0.212 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet5" translation="-0.490705 0.375512 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet6" translation="0.497486 0.375512 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="35" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet7" translation="0.491349 0.551895 -0.011" rotation="0 90 0" scale="0.57 0.85 0.5" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet8" translation="0.0180605 0.546956 -0.011" rotation="0 90 0" scale="0.57 0.85 0.5" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet9" translation="-0.49352 0.534741 -0.011" rotation="0 90 0" scale="0.57 0.85 0.5" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet10" translation="0.497486 0.725 -0.011" rotation="0 90 0" scale="0.57 0.9 0.5" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet11" translation="0.0113308 0.725 -0.011" rotation="0 90 0" scale="0.57 0.9 0.5" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet12" translation="-0.490705 0.725 -0.011" rotation="0 90 0" scale="0.57 0.9 0.5" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet13" translation="-0.49352 0.946 -0.011" rotation="0 90 0" scale="0.57 0.9 0.5" nodeId="42" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet14" translation="0.0180605 0.946 -0.011" rotation="0 90 0" scale="0.57 0.9 0.5" nodeId="43" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet15" translation="0.491349 0.946 -0.011" rotation="0 90 0" scale="0.57 0.9 0.5" nodeId="44" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet16" translation="-0.490705 1.143 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet17" translation="0.0113308 1.143 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="46" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="pellet18" translation="0.497486 1.143 -0.011" rotation="0 90 0" scale="0.57 0.8 0.5" nodeId="47" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

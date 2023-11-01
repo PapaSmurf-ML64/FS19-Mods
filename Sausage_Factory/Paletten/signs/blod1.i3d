@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="Games/Farming Simulator 19/data/shaders/decalShader.xml"/>
+        <File fileId="1" filename="bloodDecals_diffuse.dds"/>
+        <File fileId="2" filename="bloodDecals_normal.dds"/>
+    </Files>
+    <Materials>
+        <Material name="bloodDecals_mat" materialId="43" specularColor="0.509804 1 0.203922" alphaBlending="true" customShaderId="4">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2" bumpDepth="0.4"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="blod1.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="bloodDecal1" translation="0.493877 0.0518971 -0.96781" rotation="0 -39.0728 0" scale="2.18526 2.18526 2.18526" clipDistance="50" nodeId="278" materialIds="43" castsShadows="true" receiveShadows="true"/>
+    </Scene>
+</i3D>

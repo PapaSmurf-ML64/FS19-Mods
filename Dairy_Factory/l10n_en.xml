@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="Dairy_Factory_Dairy_FactoryName" v="Dairy"/>
+		<e k="Dairy_Factory_Dairy_FactoryDescription" v="This dairy produces cheese, butter, ice cream."/>
+		<e k="Dairy_Factory_Dairy_productLine_Dairy" v="Dairy"/>
+		<e k="Dairy_Factory_Dairy_Factory_Input1" v="Sugar"/>
+		<e k="Dairy_Factory_Dairy_Factory_Input2" v="Salt"/>
+		<e k="Dairy_Factory_Dairy_Factory_Input3" v="Milk"/>
+		<e k="Dairy_Factory_Dairy_Factory_Input4" v="Pallets"/>
+		<e k="Dairy_Factory_Dairy_Factory_Input5" v="Cardboard"/>
+		<e k="Dairy_Factory_Dairy_Factory_Output_1" v="Cheese"/>
+		<e k="Dairy_Factory_Dairy_Factory_Output_2" v="Ice Cream"/>
+		<e k="Dairy_Factory_Dairy_Factory_Output_3" v="Butter"/>
+	</elements>
+</l10n>

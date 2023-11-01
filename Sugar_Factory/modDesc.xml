@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Sugar Factory</en>
+        <de>Sugar Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Sugar Factory]]></en>
+        <de><![CDATA[Sugar Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+      <l10n>
+		<text name="function_sugar">
+			<en>This factory produces sugar.</en>
+			<de>Die Produktion stellt sugar.</de>
+		</text>
+		<text name="sugar">
+			<en>Sugar</en>
+			<de>sugar</de>
+		</text>
+		<text name="emptypallets">
+			<en>Empty Pallets</en>
+			<de>emptypallets</de>
+		</text>
+
+	</l10n>
+    <storeItems>
+        <storeItem xmlFilename="SugarFactory.xml" />
+        <storeItem xmlFilename="Paletten/sugarpalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

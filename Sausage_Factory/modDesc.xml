@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>TheSnake</author>
+    <version>1.0</version>
+    <title>
+        <en>Slaughterhouse</en>
+        <de>Sausage Factory</de>
+    </title>
+    <description>
+        <en><![CDATA[Slaughterhouse]]></en>
+        <de><![CDATA[Sausage Factory]]></de>
+    </description>
+    <iconFilename>store_fermentingSilo.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<l10n>
+		<text name="function_sausage">
+			<en>his slaughterhouse produces bratwurst, pork chops, and smoked ham.</en>
+			<de>Die Produktion stellt sausage.</de>
+		</text>
+		<text name="sausage">
+			<en>Bratwurst</en>
+			<de>sausage</de>
+		</text>
+		<text name="jambon">
+			<en>Pork Chops</en>
+			<de>jambon</de>
+		</text>
+		<text name="smokedham">
+			<en>Smoked Ham</en>
+			<de>smokedham</de>
+		</text>
+
+	</l10n>
+
+
+    <storeItems>
+        <storeItem xmlFilename="SausageFactory.xml" />
+        <storeItem xmlFilename="Paletten/sausagepalett.xml" />
+		 <storeItem xmlFilename="Paletten/jambonpalett.xml" />
+		  <storeItem xmlFilename="Paletten/smokedhampalett.xml" />
+    </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="register.lua" />
+		<sourceFile filename="scripts/register.lua" />
+		<sourceFile filename="scripts1/register.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+
+
+	<globalCompany minimumVersion="1.0.0.0" />
+
+</modDesc>

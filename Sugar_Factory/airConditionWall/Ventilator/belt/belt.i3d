@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="textures/sugarBeets_diffuse.dds"/>
+        <File fileId="2" filename="textures/sugarBeets_normal.dds"/>
+        <File fileId="3" filename="shaders/scrollUVShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="Ruebentextur" materialId="342" customShaderId="3">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <CustomParameter name="uvScrollSpeed" value="0 -0.75 0 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="belt.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="Baender" nodeId="79855">
+            <Shape shapeId="1" name="conveyorBelt" translation="-70.4889 -0.363871 -46.0269" rotation="0 180 0" static="true" clipDistance="100" nodeId="79858" materialIds="342" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

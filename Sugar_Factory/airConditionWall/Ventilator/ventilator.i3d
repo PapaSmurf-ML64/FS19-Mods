@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="3" filename="textures/chrome.dds"/>
+        <File fileId="1" filename="textures/luefter.dds"/>
+        <File fileId="4" filename="shaders/meshRotateShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="blinn2" materialId="38" specularColor="1 1 1">
+            <Texture fileId="1"/>
+        </Material>
+        <Material name="blinn1" materialId="33" specularColor="1 1 1" customShaderId="4">
+            <Texture fileId="3"/>
+            <CustomParameter name="rotationSpeed" value="0 1 0 3"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="ventilator.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="LueftungDach" translation="-103.858 110.912 239.552" clipDistance="200" nodeId="90401">
+            <Shape shapeId="1" name="fuss" translation="0 -1.50478 0" scale="1 3.5 1" static="true" nodeId="90402" materialIds="38" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="ventilator" translation="0 -0.400039 0" scale="1.5 1.5 1.5" nodeId="90403" materialIds="33" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>
