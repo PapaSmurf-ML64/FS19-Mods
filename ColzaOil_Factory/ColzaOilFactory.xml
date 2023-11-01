@@ -89,7 +89,7 @@
 <!-- productLines  -->
 
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="1000" title="ColzaOil_Factory_ColzaOil_productLine_ColzaOil" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="4000" title="ColzaOil_Factory_ColzaOil_productLine_ColzaOil" showInGUI="true">
 
 					<inputs>
 						<inputProduct name="IP_GRAIN" percent="30" />

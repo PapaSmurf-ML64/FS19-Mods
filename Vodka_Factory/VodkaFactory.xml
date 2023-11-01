@@ -107,7 +107,7 @@
 <!-- productLines  -->
 
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="1000" title="Vodka_Factory_Vodka_productLine_Vodka" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="4000" title="Vodka_Factory_Vodka_productLine_Vodka" showInGUI="true">
 
 					<inputs>
 						<inputProduct name="IP_GRAIN" percent="30" />

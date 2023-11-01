@@ -101,7 +101,7 @@
 <!-- productLines  -->
 
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="1000" title="Salt_Factory_Salt_productLine_Salt" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="4000" title="Salt_Factory_Salt_productLine_Salt" showInGUI="true">
 
 					<inputs>
 						<inputProduct name="IP_GRAIN" percent="30" />

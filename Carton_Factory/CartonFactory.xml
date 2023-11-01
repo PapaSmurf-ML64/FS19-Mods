@@ -173,7 +173,7 @@
 <!-- productLines  -->
 
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="1000" title="Carton_Factory_Carton_productLine_Carton" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="4000" title="Carton_Factory_Carton_productLine_Carton" showInGUI="true">
 
 					<inputs>
 						<inputProduct name="IP_GRAIN" percent="40" />

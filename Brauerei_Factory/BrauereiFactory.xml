@@ -211,7 +211,7 @@
 <!-- productLines  -->
 
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="1000" title="Brauerei_Factory_Brauerei_productLine_Brauerei" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="4000" title="Brauerei_Factory_Brauerei_productLine_Brauerei" showInGUI="true">
 
 					<inputs>
 						<inputProduct name="IP_GRAIN" percent="30" />
