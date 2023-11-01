@@ -89,7 +89,7 @@
 <!-- productLines  -->
 
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="1000" title="Flour_Factory_Flour_productLine_Flour" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="4000" title="Flour_Factory_Flour_productLine_Flour" showInGUI="true">
 
 					<inputs>
 						<inputProduct name="IP_GRAIN" percent="30" />

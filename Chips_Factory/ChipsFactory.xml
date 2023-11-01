@@ -238,7 +238,7 @@
 <!-- productLines  -->
 
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="1000" title="Chips_Factory_Chips_productLine_Chips" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="4000" title="Chips_Factory_Chips_productLine_Chips" showInGUI="true">
 
 					<inputs>
 						<inputProduct name="IP_GRAIN" percent="30" />

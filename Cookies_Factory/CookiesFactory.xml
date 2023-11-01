@@ -187,7 +187,7 @@
 <!-- productLines  -->
 
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="1000" title="Cookies_Factory_Cookies_productLine_Cookies" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="4000" title="Cookies_Factory_Cookies_productLine_Cookies" showInGUI="true">
 
 					<inputs>
 						<inputProduct name="IP_GRAIN" percent="40" />
